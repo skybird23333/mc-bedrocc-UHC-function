@@ -1,10 +1,10 @@
 {
     "format_version": 2,
     "header": {
-        "description": "Turn your world into an exciting game of Ultra Hardcore Survival!\nFull documentations at https://mcpedl.com/uhc-function-addon",
-        "name": "UHC Function Pack BETA 2.0",
+        "description": "Turn your world into UHC!\nFull documentations at https://mcpedl.com/uhc-function-addon",
+        "name": "UHC Function Pack 3.0",
         "uuid": "ee649bcf-216c-4013-9068-6a802b89d726",
-        "version": [ 0, 2, 0 ],
+        "version": [ 0, 3, 0 ],
         "min_engine_version": [ 1, 14, 0 ]
     },
     "modules": [
