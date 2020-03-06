@@ -1,7 +1,7 @@
 execute @a[tag=host,scores={settings_state=1}] ~~~ title @a actionbar §eWaiting to start...
 execute @a[tag=host,scores={settings_state=2}] ~~~ execute @a[tag=dead] ~~~ tp 0 150 0 0 0
 execute @a[tag=host,scores={settings_state=1}] ~~~ effect @a weakness 1 0 true
-#alive player counter
+#alive player counter 
 scoreboard players set "§aPlayers Alive: " display 0
 scoreboard players set @a counter 1
 execute @a[l=1,lm=1] ~~~ scoreboard players operation "§aPlayers Alive: " display += @s counter
@@ -20,7 +20,6 @@ execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ title @a[l=1,lm=1
 execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ title @a[l=1,lm=1] title §eYou have won!
 execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ effect @a slow_falling 90 0 true
 execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ scoreboard objectives setdisplay sidebar
-execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ tellraw @s {"rawtext":[{"text":"The game has now ended. You can now safely exit the world. DO NOT start a game again in this world."}]}
 execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ scoreboard players set @s settings_state 0
 #rules
 kill @e[type=xp_orb]
@@ -33,6 +32,16 @@ execute @s[tag=host,scores={settings_state=2,timer=9000}] ~~~ tellraw @a {"rawte
 execute @s[tag=host,scores={settings_state=2,timer=6000}] ~~~ tellraw @a {"rawtext":[{"text":"§eDeathmatch in 10 minutes!"}]}
 execute @s[tag=host,scores={settings_state=2,timer=3000}] ~~~ tellraw @a {"rawtext":[{"text":"§eDeathmatch in 5 minutes!"}]}
 execute @s[tag=host,scores={settings_state=2,timer=600}] ~~~ tellraw @a {"rawtext":[{"text":"§eDeathmatch in 1 minute!"}]}
+execute @s[tag=host,scores={settings_state=2,timer=100}] ~~~ title @a subtitle §eDeathmatch in §l10
+execute @s[tag=host,scores={settings_state=2,timer=100}] ~~~ title @a title §f
+execute @s[tag=host,scores={settings_state=2,timer=90}] ~~~ title @a subtitle §eDeathmatch in §l9
+execute @s[tag=host,scores={settings_state=2,timer=90}] ~~~ title @a title §f
+execute @s[tag=host,scores={settings_state=2,timer=80}] ~~~ title @a subtitle §eDeathmatch in §l8
+execute @s[tag=host,scores={settings_state=2,timer=80}] ~~~ title @a title §f
+execute @s[tag=host,scores={settings_state=2,timer=70}] ~~~ title @a subtitle §eDeathmatch in §l7
+execute @s[tag=host,scores={settings_state=2,timer=70}] ~~~ title @a title §f
+execute @s[tag=host,scores={settings_state=2,timer=60}] ~~~ title @a subtitle §eDeathmatch in §l6
+execute @s[tag=host,scores={settings_state=2,timer=60}] ~~~ title @a title §f
 execute @s[tag=host,scores={settings_state=2,timer=50}] ~~~ title @a subtitle §eDeathmatch in §l5
 execute @s[tag=host,scores={settings_state=2,timer=50}] ~~~ title @a title §f
 execute @s[tag=host,scores={settings_state=2,timer=40}] ~~~ title @a subtitle §eDeathmatch in §l4
@@ -87,61 +96,51 @@ execute @s[tag=host,scores={settings_state=2,timer=2400}] ~~~ tellraw @a {"rawte
 #scoreboard time display
 #time till deathmatch
 execute @s[tag=host,scores={settings_state=2,timer=11950}] ~~~ scoreboard players set "§f " display -1
-execute @s[tag=host,scores={settings_state=2,timer=11950}] ~~~ scoreboard players set "§l§cDeathMatch" display -2
+execute @s[tag=host,scores={settings_state=2,timer=10200}] ~~~ scoreboard players set "DeathMatch in" display -2
 
-execute @s[tag=host,scores={settings_state=2,timer=11950}] ~~~ scoreboard players set "§e20min§f left!" display -3
-execute @s[tag=host,scores={settings_state=2,timer=11400}] ~~~ scoreboard players reset "§e20min§f left!" display
-execute @s[tag=host,scores={settings_state=2,timer=11400}] ~~~ scoreboard players set "§e19min§f left!" display -3
-execute @s[tag=host,scores={settings_state=2,timer=10800}] ~~~ scoreboard players reset "§e19min§f left!" display
-execute @s[tag=host,scores={settings_state=2,timer=10800}] ~~~ scoreboard players set "§e18min§f left!" display -3
-execute @s[tag=host,scores={settings_state=2,timer=10200}] ~~~ scoreboard players reset "§e18min§f left!" display
-execute @s[tag=host,scores={settings_state=2,timer=10200}] ~~~ scoreboard players set "§e17min§f left!" display -3
-execute @s[tag=host,scores={settings_state=2,timer=9600}] ~~~ scoreboard players reset "§e17min§f left!" display
-execute @s[tag=host,scores={settings_state=2,timer=9600}] ~~~ scoreboard players set "§e16min§f left!" display -3
-execute @s[tag=host,scores={settings_state=2,timer=9000}] ~~~ scoreboard players reset "§e16min§f left!" display
-execute @s[tag=host,scores={settings_state=2,timer=9000}] ~~~ scoreboard players set "§e15min§f left!" display -3
-execute @s[tag=host,scores={settings_state=2,timer=8400}] ~~~ scoreboard players reset "§e15min§f left!" display
-execute @s[tag=host,scores={settings_state=2,timer=8400}] ~~~ scoreboard players set "§e14min§f left!" display -3
-execute @s[tag=host,scores={settings_state=2,timer=7800}] ~~~ scoreboard players reset "§e14min§f left!" display
-execute @s[tag=host,scores={settings_state=2,timer=7800}] ~~~ scoreboard players set "§e13min§f left!" display -3
-execute @s[tag=host,scores={settings_state=2,timer=7200}] ~~~ scoreboard players reset "§e13min§f left!" display
-execute @s[tag=host,scores={settings_state=2,timer=7200}] ~~~ scoreboard players set "§e12min§f left!" display -3
-execute @s[tag=host,scores={settings_state=2,timer=6600}] ~~~ scoreboard players reset "§e12min§f left!" display
-execute @s[tag=host,scores={settings_state=2,timer=6600}] ~~~ scoreboard players set "§e11min§f left!" display -3
-execute @s[tag=host,scores={settings_state=2,timer=6000}] ~~~ scoreboard players reset "§e11min§f left!" display
-execute @s[tag=host,scores={settings_state=2,timer=6000}] ~~~ scoreboard players set "§e10min§f left!" display -3
-execute @s[tag=host,scores={settings_state=2,timer=5400}] ~~~ scoreboard players reset "§e10min§f left!" display
-execute @s[tag=host,scores={settings_state=2,timer=5400}] ~~~ scoreboard players set "§e9min§f left!" display -3
-execute @s[tag=host,scores={settings_state=2,timer=4800}] ~~~ scoreboard players reset "§e9min§f left!" display
-execute @s[tag=host,scores={settings_state=2,timer=4800}] ~~~ scoreboard players set "§e8min§f left!" display -3
-execute @s[tag=host,scores={settings_state=2,timer=4200}] ~~~ scoreboard players reset "§e8min§f left!" display
-execute @s[tag=host,scores={settings_state=2,timer=4200}] ~~~ scoreboard players set "§e7min§f left!" display -3
-execute @s[tag=host,scores={settings_state=2,timer=3600}] ~~~ scoreboard players reset "§e7min§f left!" display
-execute @s[tag=host,scores={settings_state=2,timer=3600}] ~~~ scoreboard players set "§e6min§f left!" display -3
-execute @s[tag=host,scores={settings_state=2,timer=3000}] ~~~ scoreboard players reset "§e6min§f left!" display
-execute @s[tag=host,scores={settings_state=2,timer=3000}] ~~~ scoreboard players set "§e5min§f left!" display -3
-execute @s[tag=host,scores={settings_state=2,timer=2400}] ~~~ scoreboard players reset "§e5min§f left!" display
-execute @s[tag=host,scores={settings_state=2,timer=2400}] ~~~ scoreboard players set "§e4min§f left!" display -3
-execute @s[tag=host,scores={settings_state=2,timer=1800}] ~~~ scoreboard players reset "§e4min§f left!" display
-execute @s[tag=host,scores={settings_state=2,timer=1800}] ~~~ scoreboard players set "§e3min§f left!" display -3
-execute @s[tag=host,scores={settings_state=2,timer=1200}] ~~~ scoreboard players reset "§e3min§f left!" display
-execute @s[tag=host,scores={settings_state=2,timer=1200}] ~~~ scoreboard players set "§e2min§f left!" display -3
-execute @s[tag=host,scores={settings_state=2,timer=600}] ~~~ scoreboard players reset "§e2min§f left!" display
-execute @s[tag=host,scores={settings_state=2,timer=600}] ~~~ scoreboard players set "§e1min§f left!" display -3
-execute @s[tag=host,scores={settings_state=2,timer=0}] ~~~ scoreboard players reset "§e1min§f left!" display
+execute @s[tag=host,scores={settings_state=2,timer=10200}] ~~~ scoreboard players set "§a17 minutes!" display -3
+execute @s[tag=host,scores={settings_state=2,timer=9600}] ~~~ scoreboard players reset "§a17 minutes!" display
+execute @s[tag=host,scores={settings_state=2,timer=9600}] ~~~ scoreboard players set "§a16 minutes!" display -3
+execute @s[tag=host,scores={settings_state=2,timer=9000}] ~~~ scoreboard players reset "§a16 minutes!" display
+execute @s[tag=host,scores={settings_state=2,timer=9000}] ~~~ scoreboard players set "§a15 minutes!" display -3
+execute @s[tag=host,scores={settings_state=2,timer=8400}] ~~~ scoreboard players reset "§a15 minutes!" display
+execute @s[tag=host,scores={settings_state=2,timer=8400}] ~~~ scoreboard players set "§a14 minutes!" display -3
+execute @s[tag=host,scores={settings_state=2,timer=7800}] ~~~ scoreboard players reset "§a14 minutes!" display
+execute @s[tag=host,scores={settings_state=2,timer=7800}] ~~~ scoreboard players set "§a13 minutes!" display -3
+execute @s[tag=host,scores={settings_state=2,timer=7200}] ~~~ scoreboard players reset "§a13 minutes!" display
+execute @s[tag=host,scores={settings_state=2,timer=7200}] ~~~ scoreboard players set "§a12 minutes!" display -3
+execute @s[tag=host,scores={settings_state=2,timer=6600}] ~~~ scoreboard players reset "§a12 minutes!" display
+execute @s[tag=host,scores={settings_state=2,timer=6600}] ~~~ scoreboard players set "§a11 minutes!" display -3
+execute @s[tag=host,scores={settings_state=2,timer=6000}] ~~~ scoreboard players reset "§a11 minutes!" display
+execute @s[tag=host,scores={settings_state=2,timer=6000}] ~~~ scoreboard players set "§a10 minutes!" display -3
+execute @s[tag=host,scores={settings_state=2,timer=5400}] ~~~ scoreboard players reset "§a10 minutes!" display
+execute @s[tag=host,scores={settings_state=2,timer=5400}] ~~~ scoreboard players set "§a9 minutes!" display -3
+execute @s[tag=host,scores={settings_state=2,timer=4800}] ~~~ scoreboard players reset "§a9 minutes!" display
+execute @s[tag=host,scores={settings_state=2,timer=4800}] ~~~ scoreboard players set "§a8 minutes!" display -3
+execute @s[tag=host,scores={settings_state=2,timer=4200}] ~~~ scoreboard players reset "§a8 minutes!" display
+execute @s[tag=host,scores={settings_state=2,timer=4200}] ~~~ scoreboard players set "§a7 minutes!" display -3
+execute @s[tag=host,scores={settings_state=2,timer=3600}] ~~~ scoreboard players reset "§a7 minutes!" display
+execute @s[tag=host,scores={settings_state=2,timer=3600}] ~~~ scoreboard players set "§a6 minutes!" display -3
+execute @s[tag=host,scores={settings_state=2,timer=3000}] ~~~ scoreboard players reset "§a6 minutes!" display
+execute @s[tag=host,scores={settings_state=2,timer=3000}] ~~~ scoreboard players set "§a5 minutes!" display -3
+execute @s[tag=host,scores={settings_state=2,timer=2400}] ~~~ scoreboard players reset "§a5 minutes!" display
+execute @s[tag=host,scores={settings_state=2,timer=2400}] ~~~ scoreboard players set "§a4 minutes!" display -3
+execute @s[tag=host,scores={settings_state=2,timer=1800}] ~~~ scoreboard players reset "§a4 minutes!" display
+execute @s[tag=host,scores={settings_state=2,timer=1800}] ~~~ scoreboard players set "§a3 minutes!" display -3
+execute @s[tag=host,scores={settings_state=2,timer=1200}] ~~~ scoreboard players reset "§a3 minutes!" display
+execute @s[tag=host,scores={settings_state=2,timer=1200}] ~~~ scoreboard players set "§a2 minutes!" display -3
+execute @s[tag=host,scores={settings_state=2,timer=600}] ~~~ scoreboard players reset "§a2 minutes!" display
+execute @s[tag=host,scores={settings_state=2,timer=600}] ~~~ scoreboard players set "§a1 minutes!" display -3
+execute @s[tag=host,scores={settings_state=2,timer=0}] ~~~ scoreboard players reset "§a1 minutes!" display
 execute @s[tag=host,scores={settings_state=2,timer=0}] ~~~ scoreboard players reset "§f " display
-execute @s[tag=host,scores={settings_state=2,timer=0}] ~~~ scoreboard players reset "§l§cDeathMatch" display
+execute @s[tag=host,scores={settings_state=2,timer=0}] ~~~ scoreboard players reset "DeathMatch in" display
 #pvp
-execute @s[tag=host,scores={settings_state=2,timer=11950}] ~~~ scoreboard players set "§r " display -4
-execute @s[tag=host,scores={settings_state=2,timer=11950}] ~~~ scoreboard players set "§l§cPVP" display -5
+execute @s[tag=host,scores={settings_state=2,timer=11950}] ~~~ scoreboard players set "PvP enables in" display -2
 
-execute @s[tag=host,scores={settings_state=2,timer=11950}] ~~~ scoreboard players set "§e3min§f left!" display -6
-execute @s[tag=host,scores={settings_state=2,timer=11400}] ~~~ scoreboard players reset "§e3min§f left!" display
-execute @s[tag=host,scores={settings_state=2,timer=11400}] ~~~ scoreboard players set "§e2min§f left!" display -6
-execute @s[tag=host,scores={settings_state=2,timer=10800}] ~~~ scoreboard players reset "§e2min§f left!" display
-execute @s[tag=host,scores={settings_state=2,timer=10800}] ~~~ scoreboard players set "§e1min§f left!" display -6
-execute @s[tag=host,scores={settings_state=2,timer=10200}] ~~~ scoreboard players reset "§e1min§f left!" display
-execute @s[tag=host,scores={settings_state=2,timer=10200}] ~~~ scoreboard players reset "§r " display
-execute @s[tag=host,scores={settings_state=2,timer=10200}] ~~~ scoreboard players reset "§l§cPVP" display
-
-
+execute @s[tag=host,scores={settings_state=2,timer=11950}] ~~~ scoreboard players set "§a3 minutes!" display -3
+execute @s[tag=host,scores={settings_state=2,timer=11400}] ~~~ scoreboard players reset "§a3 minutes!" display
+execute @s[tag=host,scores={settings_state=2,timer=11400}] ~~~ scoreboard players set "§a2 minutes!" display -3
+execute @s[tag=host,scores={settings_state=2,timer=10800}] ~~~ scoreboard players reset "§a2 minutes!" display
+execute @s[tag=host,scores={settings_state=2,timer=10800}] ~~~ scoreboard players set "§a1 minutes!" display -3
+execute @s[tag=host,scores={settings_state=2,timer=10200}] ~~~ scoreboard players reset "§a1Minutes!" display
+execute @s[tag=host,scores={settings_state=2,timer=10200}] ~~~ scoreboard players reset "PvP enables in" display
