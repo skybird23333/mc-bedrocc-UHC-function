@@ -8,7 +8,6 @@ execute @a[l=1,lm=1] ~~~ scoreboard players operation "§aPlayers Alive: " displ
 
 execute @a[tag=host,scores={settings_state=2}] ~~~ scoreboard players operation @a[tag=host] var_alive = "§aPlayers Alive: " display
 #on player die
-execute @a[tag=host,scores={settings_state=2}] ~~~ execute @a[l=0,lm=0,tag=!dead] ~~~ title @s subtitle Killed by @p
 execute @a[tag=host,scores={settings_state=2}] ~~~ execute @a[l=0,lm=0,tag=!dead] ~~~ title @s title You died!
 execute @a[tag=host,scores={settings_state=2}] ~~~ execute @a[l=0,lm=0,tag=host] ~~~ title @s actionbar Please do not leave until the game ends.
 execute @a[tag=host,scores={settings_state=2}] ~~~ tag @a[l=0,lm=0,tag=!dead] add dead
@@ -72,27 +71,27 @@ execute @s[tag=host,scores={settings_state=2,timer=10800}] ~~~ tellraw @a {"rawt
 execute @s[tag=host,scores={settings_state=2,timer=10200}] ~~~ tellraw @a {"rawtext":[{"text":"§ePVP has been turned on."}]}
 execute @s[tag=host,scores={settings_state=2,timer=10200}] ~~~ gamerule pvp true
 #heal
-execute @s[tag=host,scores={settings_state=2,timer=10800}] ~~~ effect @a saturation 1 255 true
-execute @s[tag=host,scores={settings_state=2,timer=10800}] ~~~ effect @a instant_health 1 255 true
-execute @s[tag=host,scores={settings_state=2,timer=10800}] ~~~ tellraw @a {"rawtext":[{"text":"§aEveryone has been healed!"}]}
-execute @s[tag=host,scores={settings_state=2,timer=9600}] ~~~ effect @a saturation 1 255 true
-execute @s[tag=host,scores={settings_state=2,timer=9600}] ~~~ effect @a instant_health 1 255 true
-execute @s[tag=host,scores={settings_state=2,timer=9600}] ~~~ tellraw @a {"rawtext":[{"text":"§aEveryone has been healed!"}]}
-execute @s[tag=host,scores={settings_state=2,timer=8400}] ~~~ effect @a saturation 1 255 true
-execute @s[tag=host,scores={settings_state=2,timer=8400}] ~~~ effect @a instant_health 1 255 true
-execute @s[tag=host,scores={settings_state=2,timer=8400}] ~~~ tellraw @a {"rawtext":[{"text":"§aEveryone has been healed!"}]}
-execute @s[tag=host,scores={settings_state=2,timer=7200}] ~~~ effect @a saturation 1 255 true
-execute @s[tag=host,scores={settings_state=2,timer=7200}] ~~~ effect @a instant_health 1 255 true
-execute @s[tag=host,scores={settings_state=2,timer=7200}] ~~~ tellraw @a {"rawtext":[{"text":"§aEveryone has been healed!"}]}
-execute @s[tag=host,scores={settings_state=2,timer=4800}] ~~~ effect @a saturation 1 255 true
-execute @s[tag=host,scores={settings_state=2,timer=4800}] ~~~ effect @a instant_health 1 255 true
-execute @s[tag=host,scores={settings_state=2,timer=4800}] ~~~ tellraw @a {"rawtext":[{"text":"§aEveryone has been healed!"}]}
-execute @s[tag=host,scores={settings_state=2,timer=3600}] ~~~ effect @a saturation 1 255 true
-execute @s[tag=host,scores={settings_state=2,timer=3600}] ~~~ effect @a instant_health 1 255 true
-execute @s[tag=host,scores={settings_state=2,timer=3600}] ~~~ tellraw @a {"rawtext":[{"text":"§aEveryone has been healed!"}]}
-execute @s[tag=host,scores={settings_state=2,timer=2400}] ~~~ effect @a saturation 1 255 true
-execute @s[tag=host,scores={settings_state=2,timer=2400}] ~~~ effect @a instant_health 1 255 true
-execute @s[tag=host,scores={settings_state=2,timer=2400}] ~~~ tellraw @a {"rawtext":[{"text":"§aEveryone has been healed!\n§cThis is the final heal of this game."}]}
+execute @s[tag=host,scores={settings_state=2,settings_healing=1,timer=10800}] ~~~ effect @a saturation 1 255 true
+execute @s[tag=host,scores={settings_state=2,settings_healing=1,timer=10800}] ~~~ effect @a instant_health 1 255 true
+execute @s[tag=host,scores={settings_state=2,settings_healing=1,timer=10800}] ~~~ tellraw @a {"rawtext":[{"text":"§aEveryone has been healed!"}]}
+execute @s[tag=host,scores={settings_state=2,settings_healing=1,timer=9600}] ~~~ effect @a saturation 1 255 true
+execute @s[tag=host,scores={settings_state=2,settings_healing=1,timer=9600}] ~~~ effect @a instant_health 1 255 true
+execute @s[tag=host,scores={settings_state=2,settings_healing=1,timer=9600}] ~~~ tellraw @a {"rawtext":[{"text":"§aEveryone has been healed!"}]}
+execute @s[tag=host,scores={settings_state=2,settings_healing=1,timer=8400}] ~~~ effect @a saturation 1 255 true
+execute @s[tag=host,scores={settings_state=2,settings_healing=1,timer=8400}] ~~~ effect @a instant_health 1 255 true
+execute @s[tag=host,scores={settings_state=2,settings_healing=1,timer=8400}] ~~~ tellraw @a {"rawtext":[{"text":"§aEveryone has been healed!"}]}
+execute @s[tag=host,scores={settings_state=2,settings_healing=1,timer=7200}] ~~~ effect @a saturation 1 255 true
+execute @s[tag=host,scores={settings_state=2,settings_healing=1,timer=7200}] ~~~ effect @a instant_health 1 255 true
+execute @s[tag=host,scores={settings_state=2,settings_healing=1,timer=7200}] ~~~ tellraw @a {"rawtext":[{"text":"§aEveryone has been healed!"}]}
+execute @s[tag=host,scores={settings_state=2,settings_healing=1,timer=4800}] ~~~ effect @a saturation 1 255 true
+execute @s[tag=host,scores={settings_state=2,settings_healing=1,timer=4800}] ~~~ effect @a instant_health 1 255 true
+execute @s[tag=host,scores={settings_state=2,settings_healing=1,timer=4800}] ~~~ tellraw @a {"rawtext":[{"text":"§aEveryone has been healed!"}]}
+execute @s[tag=host,scores={settings_state=2,settings_healing=1,timer=3600}] ~~~ effect @a saturation 1 255 true
+execute @s[tag=host,scores={settings_state=2,settings_healing=1,timer=3600}] ~~~ effect @a instant_health 1 255 true
+execute @s[tag=host,scores={settings_state=2,settings_healing=1,timer=3600}] ~~~ tellraw @a {"rawtext":[{"text":"§aEveryone has been healed!"}]}
+execute @s[tag=host,scores={settings_state=2,settings_healing=1,timer=2400}] ~~~ effect @a saturation 1 255 true
+execute @s[tag=host,scores={settings_state=2,settings_healing=1,timer=2400}] ~~~ effect @a instant_health 1 255 true
+execute @s[tag=host,scores={settings_state=2,settings_healing=1,timer=2400}] ~~~ tellraw @a {"rawtext":[{"text":"§aEveryone has been healed!\n§cThis is the final heal of this game."}]}
 #scoreboard time display
 #time till deathmatch
 execute @s[tag=host,scores={settings_state=2,timer=11950}] ~~~ scoreboard players set "§f " display -1
@@ -142,5 +141,5 @@ execute @s[tag=host,scores={settings_state=2,timer=11400}] ~~~ scoreboard player
 execute @s[tag=host,scores={settings_state=2,timer=11400}] ~~~ scoreboard players set "§a2 minutes!" display -3
 execute @s[tag=host,scores={settings_state=2,timer=10800}] ~~~ scoreboard players reset "§a2 minutes!" display
 execute @s[tag=host,scores={settings_state=2,timer=10800}] ~~~ scoreboard players set "§a1 minutes!" display -3
-execute @s[tag=host,scores={settings_state=2,timer=10200}] ~~~ scoreboard players reset "§a1Minutes!" display
+execute @s[tag=host,scores={settings_state=2,timer=10200}] ~~~ scoreboard players reset "§a1 minutes!" display
 execute @s[tag=host,scores={settings_state=2,timer=10200}] ~~~ scoreboard players reset "PvP enables in" display
