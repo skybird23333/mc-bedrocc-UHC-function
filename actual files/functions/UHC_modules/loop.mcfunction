@@ -51,6 +51,7 @@ execute @s[tag=host,scores={settings_state=2,timer=20}] ~~~ title @a subtitle §
 execute @s[tag=host,scores={settings_state=2,timer=20}] ~~~ title @a title §f
 execute @s[tag=host,scores={settings_state=2,timer=10}] ~~~ title @a subtitle §eDeathmatch in §l1
 execute @s[tag=host,scores={settings_state=2,timer=10}] ~~~ title @a title §f
+execute @s[tag=host,scores={settings_state=2,timer=0}] ~~~ gamemode 2 @a
 execute @s[tag=host,scores={settings_state=2,timer=0}] ~~~ fill 9 100 9 -9 100 -9 stone
 execute @s[tag=host,scores={settings_state=2,timer=0}] ~~~ fill 10 103 10 10 103 -10 lava
 execute @s[tag=host,scores={settings_state=2,timer=0}] ~~~ fill 10 103 -10 -10 103 -10 lava

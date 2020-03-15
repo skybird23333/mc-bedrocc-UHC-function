@@ -10,7 +10,7 @@
 						}
 					],
 					"on_entry": [
-                        "/function UHC_loop"
+                        "/function UHC_modules/loop"
 					]
 				},
 				"walking": {
@@ -20,7 +20,7 @@
 						}
 					],
 					"on_entry": [
-                        "/function UHC_runloop"
+                        "/function UHC_modules/runloop"
 					]
 				}
 			}

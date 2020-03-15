@@ -2,14 +2,14 @@
     "format_version": 2,
     "header": {
         "description": "Turn your world into UHC!\nFull documentations at https://mcpedl.com/uhc-function-addon",
-        "name": "UHC Function Pack 3.0",
+        "name": "UHC Function Pack 3.1.2",
         "uuid": "ee649bcf-216c-4013-9068-6a802b89d726",
-        "version": [ 0, 3, 0 ],
+        "version": [ 3, 1, 2 ],
         "min_engine_version": [ 1, 14, 0 ]
     },
     "modules": [
         {
-            "description": "Example vanilla behavior pack",
+            "description": "Example vanilla behavior paaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
             "type": "data",
             "uuid": "fa6e90c8-c925-460f-8155-c8a60b753caa",
             "version": [0, 0, 1]
