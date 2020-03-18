@@ -1,4 +1,4 @@
-# MineCraft UHC FUNCTION
+# Minecraft UHC FUNCTION
 This project is were all the source is for the minecraft bedrock UHC function. [MCPEDL Page](https://mcpedl.com/user/skybird23333)
 
 ## Installation
