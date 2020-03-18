@@ -14,6 +14,7 @@ This project is were all the source is for the minecraft bedrock UHC function. [
 
 ## Settings
 
-You can change certain options by using `/function UHC_settings/[option]/[value]`.  Check out the MCPEDL page for more info on settings.
+You can change certain options by using `/function UHC_settings/[option]/[value]`.  
+Check out the MCPEDL page for more info on settings.
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
