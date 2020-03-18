@@ -1,7 +1,6 @@
 execute @s[tag=host,scores={var_alive=2..}] ~~~ scoreboard players set @a[tag=host,scores={settings_state=1}] "settings_state" 2
 execute @s[tag=host,scores={var_alive=2..}] ~~~ spreadplayers 0 0 50 240 @a
 execute @s[tag=host,scores={var_alive=2..}] ~~~ xp 1l @a
-execute @s[tag=host,scores={settings_scb=1}] ~~~ scoreboard objectives setdisplay sidebar display
 execute @s[tag=host,scores={var_alive=2..}] ~~~ title @a subtitle §cBecome the last survivor and win!
 execute @s[tag=host,scores={var_alive=2..}] ~~~ title @a title §cUltra Hardcore
 execute @s[tag=host,scores={var_alive=2..}] ~~~ effect @a slow_falling 90 1 true

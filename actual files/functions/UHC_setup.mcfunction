@@ -5,13 +5,12 @@ scoreboard objectives add settings_state dummy
 scoreboard objectives add var_alive dummy
 scoreboard objectives add timer dummy
 scoreboard objectives add settings_healing dummy
-scoreboard objectives add settings_scb dummy
 scoreboard objectives add settings_time dummy
 #default settings
-scoreboard players set @s settings_scb 1
 scoreboard players set @s settings_healing 1
 scoreboard players set @s settings_time 0
 #tp to 0,0
+scoreboard objectives setdisplay sidebar display
 spreadplayers 0 0 1 2 @s
 spawnpoint @a 0 100 0
 setworldspawn 0 100 0

@@ -2,10 +2,13 @@ execute @a[tag=host,scores={settings_state=1}] ~~~ title @a actionbar §eWaiting
 execute @a[tag=host,scores={settings_state=2}] ~~~ execute @a[tag=dead] ~~~ tp 0 150 0 0 0
 execute @a[tag=host,scores={settings_state=1}] ~~~ effect @a weakness 1 0 true
 #alive player counter 
-scoreboard players set "§aPlayers Alive: " display 0
+scoreboard players set @a[tag=host] var_alive 0
 scoreboard players set @a counter 1
-execute @a[l=1,lm=1] ~~~ scoreboard players operation "§aPlayers Alive: " display += @s counter
-execute @a[tag=host,scores={settings_state=2}] ~~~ scoreboard players operation @a[tag=host] var_alive = "§aPlayers Alive: " display
+execute @a[l=1,lm=1,scores={settings_state=2}] ~~~ scoreboard players operation @a[tag=host] var_alive += @s counter
+execute @a[scores={settings_state=1}] ~~~ scoreboard players operation @a[tag=host] var_alive += @s counter
+execute @a[tag=host,scores={settings_state=1}] ~~~ scoreboard players operation  "§aJoined: " display = @a[tag=host] var_alive
+execute @a[tag=host,scores={settings_state=2}] ~~~ scoreboard players operation  "§aPlayers Alive: " display = @a[tag=host] var_alive
+execute @a[tag=host,scores={settings_state=2}] ~~~ scoreboard players reset "§aJoined: " display
 #on player die
 execute @a[tag=host,scores={settings_state=2}] ~~~ execute @a[l=0,lm=0,tag=!dead] ~~~ title @s title You died!
 execute @a[tag=host,scores={settings_state=2}] ~~~ execute @a[l=0,lm=0,tag=host] ~~~ title @s actionbar Please do not leave until the game ends.
