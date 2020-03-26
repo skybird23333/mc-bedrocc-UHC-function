@@ -4,8 +4,8 @@ execute @a[tag=host,scores={settings_state=1}] ~~~ effect @a weakness 1 0 true
 #alive player counter 
 scoreboard players set @a[tag=host] var_alive 0
 scoreboard players set @a counter 1
-execute @a[l=1,lm=1,scores={settings_state=2}] ~~~ scoreboard players operation @a[tag=host] var_alive += @s counter
-execute @a[scores={settings_state=1}] ~~~ scoreboard players operation @a[tag=host] var_alive += @s counter
+execute @a[tag=host,scores={settings_state=2}] ~~~ execute @a[l=1,lm=1] ~~~ scoreboard players operation @a[tag=host] var_alive += @s counter
+execute @a[tag=host,scores={settings_state=1}] ~~~ execute @a ~~~ scoreboard players operation @a[tag=host] var_alive += @s counter
 execute @a[tag=host,scores={settings_state=1}] ~~~ scoreboard players operation  "§aJoined: " display = @a[tag=host] var_alive
 execute @a[tag=host,scores={settings_state=2}] ~~~ scoreboard players operation  "§aPlayers Alive: " display = @a[tag=host] var_alive
 execute @a[tag=host,scores={settings_state=2}] ~~~ scoreboard players reset "§aJoined: " display

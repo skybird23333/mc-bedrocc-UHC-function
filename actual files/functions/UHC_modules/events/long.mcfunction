@@ -29,7 +29,7 @@ execute @s[tag=host,scores={settings_state=2,settings_healing=1,timer=2400}] ~~~
 
 #scoreboard time display
 #time till deathmatch
-execute @s[tag=host,scores={settings_state=2,timer=34950}] ~~~ scoreboard players set "§f " display -1
+execute @s[tag=host,scores={settings_state=2,timer=35950}] ~~~ scoreboard players set "§f " display -1
 execute @s[tag=host,scores={settings_state=2,timer=10200}] ~~~ scoreboard players set "DeathMatch in" display -2
 
 
@@ -139,9 +139,9 @@ execute @s[tag=host,scores={settings_state=2,timer=0}] ~~~ scoreboard players re
 
 execute @s[tag=host,scores={settings_state=2,timer=0}] ~~~ scoreboard players reset "DeathMatch in" display
 #pvp
-execute @s[tag=host,scores={settings_state=2,timer=34950}] ~~~ scoreboard players set "PvP enables in" display -2
+execute @s[tag=host,scores={settings_state=2,timer=35950}] ~~~ scoreboard players set "PvP enables in" display -2
 
-execute @s[tag=host,scores={settings_state=2,timer=34950}] ~~~ scoreboard players set "§a9 minutes!" display -4
+execute @s[tag=host,scores={settings_state=2,timer=35950}] ~~~ scoreboard players set "§a9 minutes!" display -4
 execute @s[tag=host,scores={settings_state=2,timer=35400}] ~~~ scoreboard players reset "§a9 minutes!" display
 execute @s[tag=host,scores={settings_state=2,timer=35400}] ~~~ scoreboard players set "§a8 minutes!" display -4
 execute @s[tag=host,scores={settings_state=2,timer=34800}] ~~~ scoreboard players reset "§a8 minutes!" display

@@ -14,7 +14,6 @@ scoreboard objectives setdisplay sidebar display
 spreadplayers 0 0 1 2 @s
 spawnpoint @a 0 100 0
 setworldspawn 0 100 0
-scoreboard players set @s timer 12000
 effect @s slow_falling 90 1 true
 tag @s add host
 #game states: 1 = set up finish, 2 = started

@@ -2,10 +2,10 @@
     "format_version": 2,
     "header": {
         "description": "§lThis pack broke something? Well its beta so not my problem§r§f\nTurn your world into UHC!\nFull documentations at https://mcpedl.com/uhc-function-addon",
-        "name": "UHC Function Pack 3.2.2 BETA",
+        "name": "UHC Function Pack 3.2.3 BETA",
         "uuid": "ee649bcf-216c-4013-9068-6a802b89d726",
-        "version": [ 3, 2, 2 ],
-        "min_engine_version": [ 1, 12, 0 ]
+        "version": [ 3, 2, 3 ],
+        "min_engine_version": [ 1, 13, 0 ]
     },
     "modules": [
         {
