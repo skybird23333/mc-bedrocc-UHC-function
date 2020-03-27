@@ -18,8 +18,18 @@ execute @a[tag=host,scores={settings_state=2}] ~~~ execute @a[l=0,lm=0,scores={d
 execute @a[tag=host,scores={settings_state=2}] ~~~ execute @a[l=0,lm=0,tag=!dead] ~~~ title @s title You died!
 execute @a[tag=host,scores={settings_state=2}] ~~~ execute @a[l=0,lm=0,tag=host] ~~~ title @s actionbar Please do not leave until the game ends.
 execute @a[tag=host,scores={settings_state=2}] ~~~ tag @a[l=0,lm=0,tag=!dead,scores={die_anim_timer=51}] add dead
-#spectating
-
+#spectating(30 seconds loop)
+execute @a[tag=host,scores={settings_state=2}] ~~~ scoreboard players remove @s spec_timeout 1
+execute @a[tag=host,scores={settings_state=2,spec_timeout=300}] ~~~ tag @r add spec
+execute @a[tag=host,scores={settings_state=2,spec_timeout=1..299}] ~~~ execute @a[tag=spec] tp @a[tag=dead] ^-1 ^1 ^-2 facing ^-1 ^1 ^1
+execute @a[tag=host,scores={settings_state=2,spec_timeout=1..299}] ~~~ execute @a[tag=spec] title @a[tag=dead] actionbar Spectating @s
+execute @a[tag=host,scores={settings_state=2,spec_timeout=0}] ~~~ tag @a remove spectating
+execute @a[tag=host,scores={settings_state=2,spec_timeout=0}] ~~~ scoreboard players set @s spec_timeout 300
+gamemode 2 @a[tag=dead]
+effect @a[tag=dead] invisibility 1 255 true
+effect @a[tag=dead] fire_resistance 1 255 true
+effect @a[tag=dead] instant_health 1 255 true
+effect @a[tag=dead] weakness 1 255 true
 #on chicken dinner/victory royale for forknife kidz
 execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ title @a subtitle §e@a[l=1,lm=1] won the game!
 execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ title @a title §cGame ended

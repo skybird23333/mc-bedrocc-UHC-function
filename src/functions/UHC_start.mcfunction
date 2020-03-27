@@ -10,6 +10,7 @@ execute @s[tag=host,scores={var_alive=2..}] ~~~ replaceitem entity @a slot.armor
 execute @s[tag=host,scores={var_alive=2..}] ~~~ replaceitem entity @a slot.armor.chest 0 leather_chestplate 1
 execute @s[tag=host,scores={var_alive=2..}] ~~~ replaceitem entity @a slot.armor.legs 0 leather_leggings 1
 execute @s[tag=host,scores={var_alive=2..}] ~~~ replaceitem entity @a slot.armor.feet 0 leather_boots 1
+execute @s[tag=host,scores={var_alive=2..}] ~~~ scoreboard players set @s spec_timeout 0
 execute @s[tag=host,scores={var_alive=2..,settings_time=0}] ~~~ scoreboard players set @s timer 12000
 execute @s[tag=host,scores={var_alive=2..,settings_time=1}] ~~~ scoreboard players set @s timer 36000
 tellraw @s[tag=!host] {"rawtext":[{"text":"§c§lERROR§r Unable to start the game."}]}
