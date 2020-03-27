@@ -1,5 +1,4 @@
 execute @a[tag=host,scores={settings_state=1}] ~~~ title @a actionbar §eWaiting to start...
-execute @a[tag=host,scores={settings_state=2}] ~~~ execute @a[tag=dead] ~~~ tp 0 150 0 0 0
 execute @a[tag=host,scores={settings_state=1}] ~~~ effect @a weakness 1 0 true
 #alive player counter 
 scoreboard players set @a[tag=host] var_alive 0
@@ -10,9 +9,16 @@ execute @a[tag=host,scores={settings_state=1}] ~~~ scoreboard players operation 
 execute @a[tag=host,scores={settings_state=2}] ~~~ scoreboard players operation  "§aPlayers Alive: " display = @a[tag=host] var_alive
 execute @a[tag=host,scores={settings_state=2}] ~~~ scoreboard players reset "§aJoined: " display
 #on player die
+scoreboard players add @s die_anim_timer 0
+#the crappy death animation
+execute @a[tag=host,scores={settings_state=2}] ~~~ execute @a[l=0,lm=0,scores={die_anim_timer=0..50}] ~~~ scoreboard players add @s die_anim_timer 1
+execute @a[tag=host,scores={settings_state=2}] ~~~ execute @a[l=0,lm=0,scores={die_anim_timer=1}] ~~~ tp ~ 3 ~
+execute @a[tag=host,scores={settings_state=2}] ~~~ execute @a[l=0,lm=0,scores={die_anim_timer=1..18}] ~~~ tp ~~~ ~-5 ~
+execute @a[tag=host,scores={settings_state=2}] ~~~ execute @a[l=0,lm=0,scores={die_anim_timer=1..50}] ~~~ tp ~~0.1~
 execute @a[tag=host,scores={settings_state=2}] ~~~ execute @a[l=0,lm=0,tag=!dead] ~~~ title @s title You died!
 execute @a[tag=host,scores={settings_state=2}] ~~~ execute @a[l=0,lm=0,tag=host] ~~~ title @s actionbar Please do not leave until the game ends.
-execute @a[tag=host,scores={settings_state=2}] ~~~ tag @a[l=0,lm=0,tag=!dead] add dead
+execute @a[tag=host,scores={settings_state=2}] ~~~ tag @a[l=0,lm=0,tag=!dead,scores={die_anim_timer=51}] add dead
+#spectating
 
 #on chicken dinner/victory royale for forknife kidz
 execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ title @a subtitle §e@a[l=1,lm=1] won the game!
