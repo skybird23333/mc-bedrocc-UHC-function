@@ -3,7 +3,7 @@ execute @a[tag=host,scores={settings_state=1}] ~~~ effect @a weakness 1 0 true
 #alive player counter 
 scoreboard players set @a[tag=host] var_alive 0
 scoreboard players set @a counter 1
-execute @a[tag=host,scores={settings_state=2}] ~~~ execute @a[l=1,lm=1] ~~~ scoreboard players operation @a[tag=host] var_alive += @s counter
+execute @a[tag=host,scores={settings_state=2}] ~~~ execute @a[lm=1] ~~~ scoreboard players operation @a[tag=host] var_alive += @s counter
 execute @a[tag=host,scores={settings_state=1}] ~~~ execute @a ~~~ scoreboard players operation @a[tag=host] var_alive += @s counter
 execute @a[tag=host,scores={settings_state=1}] ~~~ scoreboard players operation  "§aJoined: " display = @a[tag=host] var_alive
 execute @a[tag=host,scores={settings_state=2}] ~~~ scoreboard players operation  "§aPlayers Alive: " display = @a[tag=host] var_alive
@@ -31,10 +31,10 @@ effect @a[tag=dead] fire_resistance 1 255 true
 effect @a[tag=dead] instant_health 1 255 true
 effect @a[tag=dead] weakness 1 255 true
 #on chicken dinner/victory royale for forknife kidz
-execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ title @a subtitle §e@a[l=1,lm=1] won the game!
+execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ title @a subtitle §e@a[lm=1] won the game!
 execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ title @a title §cGame ended
-execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ title @a[l=1,lm=1] subtitle §eCongrats!
-execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ title @a[l=1,lm=1] title §eYou have won!
+execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ title @a[lm=1] subtitle §eCongrats!
+execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ title @a[lm=1] title §eYou have won!
 execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ effect @a slow_falling 90 0 true
 execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ scoreboard objectives setdisplay sidebar
 execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ scoreboard players set @s settings_state 0
@@ -83,4 +83,60 @@ execute @s[tag=host,scores={settings_state=2,timer=0}] ~~~ fill 10 103 10 10 103
 execute @s[tag=host,scores={settings_state=2,timer=0}] ~~~ fill 10 103 -10 -10 103 -10 lava
 execute @s[tag=host,scores={settings_state=2,timer=0}] ~~~ fill -10 103 -10 -10 103 10 lava
 execute @s[tag=host,scores={settings_state=2,timer=0}] ~~~ fill -10 103 10 10 103 10 lava
-execute @s[tag=host,scores={settings_state=2,timer=0}] ~~~ tp @a[l=1,lm=1] 0 102 0
+execute @s[tag=host,scores={settings_state=2,timer=0}] ~~~ tp @a[lm=1] 0 102 0
+#disabling stuff
+fill ~10 ~10 ~10 ~-10 ~-10 ~-10 air 0 replace end_portal
+fill ~10 ~10 ~10 ~-10 ~-10 ~-10 air 0 replace portal
+#trees dropping enchanted apples
+execute @e[c=1,type=item,name=apple] ~~~ execute @a[r=2] ~~~ give @s appleenchanted
+execute @e[c=1,type=item,name=apple] ~~~ execute @a[r=2] ~~~ kill @e[type=item,c=1]
+execute @e[c=1,type=item,name=Ябълка] ~~~ execute @a[r=2] ~~~ give @s appleenchanted
+execute @e[c=1,type=item,name=Ябълка] ~~~ execute @a[r=2] ~~~ kill @e[type=item,c=1]
+execute @e[c=1,type=item,name=Jablko] ~~~ execute @a[r=2] ~~~ give @s appleenchanted
+execute @e[c=1,type=item,name=Jablko] ~~~ execute @a[r=2] ~~~ kill @e[type=item,c=1]
+execute @e[c=1,type=item,name=Æble] ~~~ execute @a[r=2] ~~~ give @s appleenchanted
+execute @e[c=1,type=item,name=Æble] ~~~ execute @a[r=2] ~~~ kill @e[type=item,c=1]
+execute @e[c=1,type=item,name=Apfel] ~~~ execute @a[r=2] ~~~ give @s appleenchanted
+execute @e[c=1,type=item,name=Apfel] ~~~ execute @a[r=2] ~~~ kill @e[type=item,c=1]
+execute @e[c=1,type=item,name=Μήλο] ~~~ execute @a[r=2] ~~~ give @s appleenchanted
+execute @e[c=1,type=item,name=Μήλο] ~~~ execute @a[r=2] ~~~ kill @e[type=item,c=1]
+execute @e[c=1,type=item,name=Manzana] ~~~ execute @a[r=2] ~~~ give @s appleenchanted
+execute @e[c=1,type=item,name=Manzana] ~~~ execute @a[r=2] ~~~ kill @e[type=item,c=1]
+execute @e[c=1,type=item,name=Omena] ~~~ execute @a[r=2] ~~~ give @s appleenchanted
+execute @e[c=1,type=item,name=Omena] ~~~ execute @a[r=2] ~~~ kill @e[type=item,c=1]
+execute @e[c=1,type=item,name=Pomme] ~~~ execute @a[r=2] ~~~ give @s appleenchanted
+execute @e[c=1,type=item,name=Pomme] ~~~ execute @a[r=2] ~~~ kill @e[type=item,c=1]
+execute @e[c=1,type=item,name=Alma] ~~~ execute @a[r=2] ~~~ give @s appleenchanted
+execute @e[c=1,type=item,name=Alma] ~~~ execute @a[r=2] ~~~ kill @e[type=item,c=1]
+execute @e[c=1,type=item,name=Apel] ~~~ execute @a[r=2] ~~~ give @s appleenchanted
+execute @e[c=1,type=item,name=Apel] ~~~ execute @a[r=2] ~~~ kill @e[type=item,c=1]
+execute @e[c=1,type=item,name=Mela] ~~~ execute @a[r=2] ~~~ give @s appleenchanted
+execute @e[c=1,type=item,name=Mela] ~~~ execute @a[r=2] ~~~ kill @e[type=item,c=1]
+execute @e[c=1,type=item,name=リンゴ] ~~~ execute @a[r=2] ~~~ give @s appleenchanted
+execute @e[c=1,type=item,name=リンゴ] ~~~ execute @a[r=2] ~~~ kill @e[type=item,c=1]
+execute @e[c=1,type=item,name=사과] ~~~ execute @a[r=2] ~~~ give @s appleenchanted
+execute @e[c=1,type=item,name=사과] ~~~ execute @a[r=2] ~~~ kill @e[type=item,c=1]
+execute @e[c=1,type=item,name=Eple] ~~~ execute @a[r=2] ~~~ give @s appleenchanted
+execute @e[c=1,type=item,name=Eple] ~~~ execute @a[r=2] ~~~ kill @e[type=item,c=1]
+execute @e[c=1,type=item,name=Appel] ~~~ execute @a[r=2] ~~~ give @s appleenchanted
+execute @e[c=1,type=item,name=Appel] ~~~ execute @a[r=2] ~~~ kill @e[type=item,c=1]
+execute @e[c=1,type=item,name=Jabłko] ~~~ execute @a[r=2] ~~~ give @s appleenchanted
+execute @e[c=1,type=item,name=Jabłko] ~~~ execute @a[r=2] ~~~ kill @e[type=item,c=1]
+execute @e[c=1,type=item,name=Maçã] ~~~ execute @a[r=2] ~~~ give @s appleenchanted
+execute @e[c=1,type=item,name=Maçã] ~~~ execute @a[r=2] ~~~ kill @e[type=item,c=1]
+execute @e[c=1,type=item,name=Яблоко] ~~~ execute @a[r=2] ~~~ give @s appleenchanted
+execute @e[c=1,type=item,name=Яблоко] ~~~ execute @a[r=2] ~~~ kill @e[type=item,c=1]
+execute @e[c=1,type=item,name=Jablko] ~~~ execute @a[r=2] ~~~ give @s appleenchanted
+execute @e[c=1,type=item,name=Jablko] ~~~ execute @a[r=2] ~~~ kill @e[type=item,c=1]
+execute @e[c=1,type=item,name=Äpple] ~~~ execute @a[r=2] ~~~ give @s appleenchanted
+execute @e[c=1,type=item,name=Äpple] ~~~ execute @a[r=2] ~~~ kill @e[type=item,c=1]
+execute @e[c=1,type=item,name=Elma] ~~~ execute @a[r=2] ~~~ kill @e[type=item,c=1]
+execute @e[c=1,type=item,name=Elma] ~~~ execute @a[r=2] ~~~ give @s appleenchanted
+execute @e[c=1,type=item,name=Яблуко] ~~~ execute @a[r=2] ~~~ give @s appleenchanted
+execute @e[c=1,type=item,name=Яблуко] ~~~ execute @a[r=2] ~~~ kill @e[type=item,c=1]
+execute @e[c=1,type=item,name=蘋果] ~~~ execute @a[r=2] ~~~ give @s appleenchanted
+execute @e[c=1,type=item,name=蘋果] ~~~ execute @a[r=2] ~~~ kill @e[type=item,c=1]
+execute @e[c=1,type=item,name=苹果] ~~~ execute @a[r=2] ~~~ give @s appleenchanted
+execute @e[c=1,type=item,name=苹果] ~~~ execute @a[r=2] ~~~ kill @e[type=item,c=1]
+#had to do this for all languages because thats how minecraft fucking works
+#fix your shit microsoft
