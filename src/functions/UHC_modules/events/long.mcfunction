@@ -1,28 +1,9 @@
 #pvp disallow tiem
-execute @s[tag=host,scores={settings_state=2,timer=11400}] ~~~ tellraw @a {"rawtext":[{"text":"§ePVP will be turned on in §c2§e minutes!"}]}
-execute @s[tag=host,scores={settings_state=2,timer=10800}] ~~~ tellraw @a {"rawtext":[{"text":"§ePVP will be turned on in §c1§e minute!"}]}
-execute @s[tag=host,scores={settings_state=2,timer=10200}] ~~~ tellraw @a {"rawtext":[{"text":"§ePVP has been turned on."}]}
-execute @s[tag=host,scores={settings_state=2,timer=10200}] ~~~ gamerule pvp true
+execute @s[tag=host,scores={settings_state=2,timer=31800}] ~~~ tellraw @a {"rawtext":[{"text":"§ePVP will be turned on in §c2§e minutes!"}]}
+execute @s[tag=host,scores={settings_state=2,timer=31200}] ~~~ tellraw @a {"rawtext":[{"text":"§ePVP will be turned on in §c1§e minute!"}]}
+execute @s[tag=host,scores={settings_state=2,timer=30600}] ~~~ tellraw @a {"rawtext":[{"text":"§ePVP has been turned on."}]}
+execute @s[tag=host,scores={settings_state=2,timer=30600}] ~~~ gamerule pvp true
 #heal
-execute @s[tag=host,scores={settings_state=2,settings_healing=1,timer=10800}] ~~~ effect @a saturation 1 255 true
-execute @s[tag=host,scores={settings_state=2,settings_healing=1,timer=10800}] ~~~ effect @a instant_health 1 255 true
-execute @s[tag=host,scores={settings_state=2,settings_healing=1,timer=10800}] ~~~ tellraw @a {"rawtext":[{"text":"§aEveryone has been healed!"}]}
-execute @s[tag=host,scores={settings_state=2,settings_healing=1,timer=9600}] ~~~ effect @a saturation 1 255 true
-execute @s[tag=host,scores={settings_state=2,settings_healing=1,timer=9600}] ~~~ effect @a instant_health 1 255 true
-execute @s[tag=host,scores={settings_state=2,settings_healing=1,timer=9600}] ~~~ tellraw @a {"rawtext":[{"text":"§aEveryone has been healed!"}]}
-execute @s[tag=host,scores={settings_state=2,settings_healing=1,timer=8400}] ~~~ effect @a saturation 1 255 true
-execute @s[tag=host,scores={settings_state=2,settings_healing=1,timer=8400}] ~~~ effect @a instant_health 1 255 true
-execute @s[tag=host,scores={settings_state=2,settings_healing=1,timer=8400}] ~~~ tellraw @a {"rawtext":[{"text":"§aEveryone has been healed!"}]}
-execute @s[tag=host,scores={settings_state=2,settings_healing=1,timer=7200}] ~~~ effect @a saturation 1 255 true
-execute @s[tag=host,scores={settings_state=2,settings_healing=1,timer=7200}] ~~~ effect @a instant_health 1 255 true
-execute @s[tag=host,scores={settings_state=2,settings_healing=1,timer=7200}] ~~~ tellraw @a {"rawtext":[{"text":"§aEveryone has been healed!"}]}
-execute @s[tag=host,scores={settings_state=2,settings_healing=1,timer=4800}] ~~~ effect @a saturation 1 255 true
-execute @s[tag=host,scores={settings_state=2,settings_healing=1,timer=4800}] ~~~ effect @a instant_health 1 255 true
-execute @s[tag=host,scores={settings_state=2,settings_healing=1,timer=4800}] ~~~ tellraw @a {"rawtext":[{"text":"§aEveryone has been healed!"}]}
-execute @s[tag=host,scores={settings_state=2,settings_healing=1,timer=3600}] ~~~ effect @a saturation 1 255 true
-execute @s[tag=host,scores={settings_state=2,settings_healing=1,timer=3600}] ~~~ effect @a instant_health 1 255 true
-execute @s[tag=host,scores={settings_state=2,settings_healing=1,timer=3600}] ~~~ tellraw @a {"rawtext":[{"text":"§aEveryone has been healed!"}]}
-execute @s[tag=host,scores={settings_state=2,settings_healing=1,timer=2400}] ~~~ effect @a saturation 1 255 true
 execute @s[tag=host,scores={settings_state=2,settings_healing=1,timer=2400}] ~~~ effect @a instant_health 1 255 true
 execute @s[tag=host,scores={settings_state=2,settings_healing=1,timer=2400}] ~~~ tellraw @a {"rawtext":[{"text":"§aEveryone has been healed!\n§cThis is the final heal of this game."}]}
 
