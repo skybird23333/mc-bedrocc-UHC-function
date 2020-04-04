@@ -1,10 +1,10 @@
 {
     "format_version": 2,
     "header": {
-        "description": "§lTHIS IS BETA§r\nTurn your world into UHC!\nFull documentations at https://mcpedl.com/uhc-function-addon",
-        "name": "UHC Function Pack 4.0 BETA",
+        "description": "Turn your world into UHC!\nTutorial at https://mcpedl.com/uhc-function-addon",
+        "name": "UHC Function Pack 4.1.1 BETA",
         "uuid": "ee649bcf-216c-4013-9068-6a802b89d726",
-        "version": [ 4, 0, 0 ],
+        "version": [ 4, 1, 1 ],
         "min_engine_version": [ 1, 13, 0 ]
     },
     "modules": [

@@ -51,7 +51,7 @@ execute @a[tag=host,scores={settings_state=1}] ~~~ gamemode adventure @a
 execute @a[tag=host,scores={settings_state=2}] ~~~ gamemode survival @a
 execute @a[tag=host,scores={settings_state=1}] ~~~ gamemode adventure @a
 #events for different time settings
-execute @s[tag=host,scores={settings_state=2,settings_time=0}] ~~~ function UHC_modules/events/normal
+execute @s[tag=host,scores={settings_state=2,settings_time=0}] ~~~ function UHC_modules/events/long
 execute @s[tag=host,scores={settings_state=2,settings_time=1}] ~~~ function UHC_modules/events/long
 #deathmatch(since this is global why not put it here)
 #if the last few players were all noob/pro and they could not kill each other for 20 mins

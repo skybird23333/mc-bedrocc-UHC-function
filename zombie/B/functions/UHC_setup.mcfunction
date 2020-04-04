@@ -9,12 +9,13 @@ scoreboard objectives add settings_time dummy
 scoreboard objectives add die_anim_timer dummy
 scoreboard objectives add spec_timeout dummy
 scoreboard objectives add debug_tickspeed dummy
+scoreboard objectives add day_timer dummy
 # v THIS IS EXPERIMENTAL DO NOT TOUCH v
 scoreboard objectives add autostart dummy
 # ^ THIS IS EXPERIMENTAL DO NOT TOUCH ^
 #default settings
 scoreboard players set @s settings_healing 1
-scoreboard players set @s settings_time 0
+scoreboard players set @s settings_time 1
 #tp to 0,0
 scoreboard objectives setdisplay sidebar display
 spreadplayers 0 0 1 2 @s
