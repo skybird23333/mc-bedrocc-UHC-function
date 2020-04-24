@@ -108,9 +108,9 @@ fill ~10 ~10 ~10 ~-10 ~-10 ~-10 air 0 replace end_portal
 fill ~10 ~10 ~10 ~-10 ~-10 ~-10 air 0 replace portal
 
 execute @s[tag=host,scores={settings_gapple=1}] ~~~ function UHC_modules/gapple
-execute @s[tag=host,scores={settings_spectate=1}] ~~~ function UHC_modules/spectate
-execute @s[tag=host,scores={settings_spectate=0}] ~~~ tp @a[tag=dead] 0 300 0
-execute @s[tag=host,scores={settings_spectate=0}] ~~~ title @a[tag=dead] actionbar Spectating is disabled.
+execute @s[tag=host,scores={settings_spec=1}] ~~~ function UHC_modules/spectate
+execute @s[tag=host,scores={settings_spec=0}] ~~~ tp @a[tag=dead] 0 300 0
+execute @s[tag=host,scores={settings_spec=0}] ~~~ title @a[tag=dead] actionbar Spectating is disabled.
 
 #HAHA this is still enabled
 gamemode 2 @a[tag=dead]
