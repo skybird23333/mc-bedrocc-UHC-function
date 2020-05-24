@@ -21,8 +21,7 @@ execute @a[tag=host,scores={autostart=0,settings_state=1,anim_timer=17}] ~~~ tit
 execute @a[tag=host,scores={anim_timer=40..}] ~~~ scoreboard players set @s anim_timer 0
 #autostart
 #autostart usuage:
-#SCOREBOARD players set start_timer to time u want in secs
-#SCOREBOARD players set autostart 1
+#SCOREBOARD players set autostart to time u want in secs
 execute @a[tag=host,scores={settings_state=1,autostart=1..}] ~~~ scoreboard players operation @s start_timer = @s autostart
 execute @a[tag=host,scores={settings_state=1,autostart=1..,anim_timer=5}] ~~~ scoreboard players remove @s start_timer 1
 execute @a[tag=host,scores={settings_state=1,autostart=1..,anim_timer=15}] ~~~ scoreboard players remove @s start_timer 1
@@ -34,7 +33,7 @@ execute @a[tag=host,scores={settings_state=1,autostart=1..,start_timer=3}] ~~~ t
 execute @a[tag=host,scores={settings_state=1,autostart=1..,start_timer=2}] ~~~ title @a actionbar Starting in 2
 execute @a[tag=host,scores={settings_state=1,autostart=1..,start_timer=1}] ~~~ title @a actionbar Starting in 1
 execute @a[tag=host,scores={settings_state=1,autostart=1..,start_timer=0}] ~~~ function UHC_start
-#alive player counter 
+#alive player counter
 scoreboard players set @a[tag=host] var_alive 0
 scoreboard players set @a counter 1
 execute @a[tag=host,scores={settings_state=2}] ~~~ execute @a[lm=1] ~~~ scoreboard players operation @a[tag=host] var_alive += @s counter
@@ -130,3 +129,8 @@ execute @a[tag=host,scores={timer=0..,settings_state=2,spec_timeout=1..299}] ~~~
 execute @a[tag=host,scores={timer=0..,settings_state=2,spec_timeout=1..299}] ~~~ execute @a[tag=spec,rxm=75,rx=90] ~~~ tp @a[tag=dead] ^-0.5 ^ ^-1 facing ^-0.5 ^ ^1
 execute @a[tag=host,scores={timer=0..,settings_state=2,spec_timeout=1..299}] ~~~ execute @a[tag=spec] ~~~ title @a[tag=dead] actionbar §lSpectating §e@s
 execute @a[tag=host,scores={timer=0..,settings_state=2,spec_timeout=..0}] ~~~ scoreboard players set @s spec_timeout 300
+
+
+scoreboard players operation settings_state debug_watcher = @e[tag=host] settings_state
+scoreboard players operation anim_timer debug_watcher = @e[tag=host] anim_timer 
+scoreboard players operation start_timer debug_watcher = @e[tag=host] start_timer
