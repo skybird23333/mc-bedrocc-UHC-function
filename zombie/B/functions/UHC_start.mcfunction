@@ -11,8 +11,8 @@ execute @s[tag=host,scores={var_alive=2..}] ~~~ replaceitem entity @a slot.armor
 execute @s[tag=host,scores={var_alive=2..}] ~~~ replaceitem entity @a slot.armor.legs 0 leather_leggings 1
 execute @s[tag=host,scores={var_alive=2..}] ~~~ replaceitem entity @a slot.armor.feet 0 leather_boots 1
 execute @s[tag=host,scores={var_alive=2..}] ~~~ give @a wooden_sword 1 0
-execute @s[tag=host,scores={var_alive=2..}] ~~~ give @a bandage 5 0
-execute @s[tag=host,scores={var_alive=2..}] ~~~ give @a pills 1 0
+execute @s[tag=host,scores={var_alive=2..}] ~~~ give @a uhc:bandage 5 0
+execute @s[tag=host,scores={var_alive=2..}] ~~~ give @a uhc:pills 1 0
 execute @s[tag=host,scores={var_alive=2..}] ~~~ scoreboard players set @s spec_timeout 0
 execute @s[tag=host,scores={var_alive=2..}] ~~~ scoreboard players set @s day_timer 0
 execute @s[tag=host,scores={var_alive=2..,settings_time=1}] ~~~ scoreboard players set @s timer 36000
