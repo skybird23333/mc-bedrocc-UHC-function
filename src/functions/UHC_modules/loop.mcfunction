@@ -152,35 +152,35 @@ execute @a ~~~ fill ~7 150 ~7 ~-7 90 ~-7 stone 0 replace stone 3
 execute @a ~~~ fill ~7 150 ~7 ~-7 90 ~-7 stone 0 replace stone 5
 
 #cutclean
-execute @a ~~~ execute @e[name="Желязна руда",r=5] ~~~ give @p[r=3] iron_ore
-execute @a ~~~ execute @e[name="Železná ruda",r=5] ~~~ give @p[r=3] iron_ore
-execute @a ~~~ execute @e[name="Jernmalm",r=5] ~~~ give @p[r=3] iron_ore
-execute @a ~~~ execute @e[name="Eisenerz",r=5] ~~~ give @p[r=3] iron_ore
-execute @a ~~~ execute @e[name="Ορυκτός σίδηρος",r=5] ~~~ give @p[r=3] iron_ore
-execute @a ~~~ execute @e[name="Iron Ore",r=5] ~~~ give @p[r=3] iron_ore
-execute @a ~~~ execute @e[name="Iron Ore",r=5] ~~~ give @p[r=3] iron_ore
-execute @a ~~~ execute @e[name="Mineral de hierro",r=5] ~~~ give @p[r=3] iron_ore
-execute @a ~~~ execute @e[name="Mineral de hierro",r=5] ~~~ give @p[r=3] iron_ore
-execute @a ~~~ execute @e[name="Minerai de fer",r=5] ~~~ give @p[r=3] iron_ore
-execute @a ~~~ execute @e[name="Rautamalmi",r=5] ~~~ give @p[r=3] iron_ore
-execute @a ~~~ execute @e[name="Minerai de fer",r=5] ~~~ give @p[r=3] iron_ore
-execute @a ~~~ execute @e[name="Vasérc",r=5] ~~~ give @p[r=3] iron_ore
-execute @a ~~~ execute @e[name="Bijih Besi",r=5] ~~~ give @p[r=3] iron_ore
-execute @a ~~~ execute @e[name="Minerale di ferro",r=5] ~~~ give @p[r=3] iron_ore
-execute @a ~~~ execute @e[name="鉄鉱石",r=5] ~~~ give @p[r=3] iron_ore
-execute @a ~~~ execute @e[name="철광석",r=5] ~~~ give @p[r=3] iron_ore
-execute @a ~~~ execute @e[name="Jernmalm",r=5] ~~~ give @p[r=3] iron_ore
-execute @a ~~~ execute @e[name="IJzererts",r=5] ~~~ give @p[r=3] iron_ore
-execute @a ~~~ execute @e[name="Ruda żelaza",r=5] ~~~ give @p[r=3] iron_ore
-execute @a ~~~ execute @e[name="Minério de Ferro",r=5] ~~~ give @p[r=3] iron_ore
-execute @a ~~~ execute @e[name="Minério de Ferro",r=5] ~~~ give @p[r=3] iron_ore
-execute @a ~~~ execute @e[name="Железная руда",r=5] ~~~ give @p[r=3] iron_ore
-execute @a ~~~ execute @e[name="Železná ruda",r=5] ~~~ give @p[r=3] iron_ore
-execute @a ~~~ execute @e[name="Järnmalm",r=5] ~~~ give @p[r=3] iron_ore
-execute @a ~~~ execute @e[name="Demir Cevheri",r=5] ~~~ give @p[r=3] iron_ore
-execute @a ~~~ execute @e[name="Залізна руда",r=5] ~~~ give @p[r=3] iron_ore
-execute @a ~~~ execute @e[name="鐵礦石",r=5] ~~~ give @p[r=3] iron_ore
-execute @a ~~~ execute @e[name="铁矿石",r=5] ~~~ give @p[r=3] iron_ore
+execute @a ~~~ execute @e[name="Желязна руда",r=5] ~~~ give @p iron_ingot
+execute @a ~~~ execute @e[name="Železná ruda",r=5] ~~~ give @p iron_ingot
+execute @a ~~~ execute @e[name="Jernmalm",r=5] ~~~ give @p iron_ingot
+execute @a ~~~ execute @e[name="Eisenerz",r=5] ~~~ give @p iron_ingot
+execute @a ~~~ execute @e[name="Ορυκτός σίδηρος",r=5] ~~~ give @p iron_ingot
+execute @a ~~~ execute @e[name="Iron Ore",r=5] ~~~ give @p iron_ingot
+execute @a ~~~ execute @e[name="Iron Ore",r=5] ~~~ give @p iron_ingot
+execute @a ~~~ execute @e[name="Mineral de hierro",r=5] ~~~ give @p iron_ingot
+execute @a ~~~ execute @e[name="Mineral de hierro",r=5] ~~~ give @p iron_ingot
+execute @a ~~~ execute @e[name="Minerai de fer",r=5] ~~~ give @p iron_ingot
+execute @a ~~~ execute @e[name="Rautamalmi",r=5] ~~~ give @p iron_ingot
+execute @a ~~~ execute @e[name="Minerai de fer",r=5] ~~~ give @p iron_ingot
+execute @a ~~~ execute @e[name="Vasérc",r=5] ~~~ give @p iron_ingot
+execute @a ~~~ execute @e[name="Bijih Besi",r=5] ~~~ give @p iron_ingot
+execute @a ~~~ execute @e[name="Minerale di ferro",r=5] ~~~ give @p iron_ingot
+execute @a ~~~ execute @e[name="鉄鉱石",r=5] ~~~ give @p iron_ingot
+execute @a ~~~ execute @e[name="철광석",r=5] ~~~ give @p iron_ingot
+execute @a ~~~ execute @e[name="Jernmalm",r=5] ~~~ give @p iron_ingot
+execute @a ~~~ execute @e[name="IJzererts",r=5] ~~~ give @p iron_ingot
+execute @a ~~~ execute @e[name="Ruda żelaza",r=5] ~~~ give @p iron_ingot
+execute @a ~~~ execute @e[name="Minério de Ferro",r=5] ~~~ give @p iron_ingot
+execute @a ~~~ execute @e[name="Minério de Ferro",r=5] ~~~ give @p iron_ingot
+execute @a ~~~ execute @e[name="Железная руда",r=5] ~~~ give @p iron_ingot
+execute @a ~~~ execute @e[name="Železná ruda",r=5] ~~~ give @p iron_ingot
+execute @a ~~~ execute @e[name="Järnmalm",r=5] ~~~ give @p iron_ingot
+execute @a ~~~ execute @e[name="Demir Cevheri",r=5] ~~~ give @p iron_ingot
+execute @a ~~~ execute @e[name="Залізна руда",r=5] ~~~ give @p iron_ingot
+execute @a ~~~ execute @e[name="鐵礦石",r=5] ~~~ give @p iron_ingot
+execute @a ~~~ execute @e[name="铁矿石",r=5] ~~~ give @p iron_ingot
 
 execute @a ~~~ execute @e[name="Желязна руда",r=5] ~~~ kill
 execute @a ~~~ execute @e[name="Železná ruda",r=5] ~~~ kill
