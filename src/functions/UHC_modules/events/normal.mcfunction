@@ -29,7 +29,7 @@ execute @s[tag=host,scores={settings_state=2,settings_healing=1,timer=2400}] ~~~
 #time till deathmatch
 execute @s[tag=host,scores={settings_state=2,timer=11950}] ~~~ scoreboard players set "§f " display -1
 execute @s[tag=host,scores={settings_state=2,timer=11950}] ~~~ scoreboard players set "§r " display -5
-execute @s[tag=host,scores={settings_state=2,timer=11950}] ~~~ scoreboard players set "UHC Classic" display -6
+execute @s[tag=host,scores={settings_state=2,timer=11950}] ~~~ scoreboard players set "Quick UHC" display -6
 execute @s[tag=host,scores={settings_state=2,timer=10200}] ~~~ scoreboard players set "DeathMatch in" display -2
 
 execute @s[tag=host,scores={settings_state=2,timer=10200}] ~~~ scoreboard players set "§a17 minutes!" display -3

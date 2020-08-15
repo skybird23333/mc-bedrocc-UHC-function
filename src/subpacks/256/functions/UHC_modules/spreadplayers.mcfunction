@@ -1,0 +1,1 @@
+spreadplayers 0 0 10 120 @a[tag=!spec]
