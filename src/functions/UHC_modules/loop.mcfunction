@@ -1,24 +1,23 @@
 execute @a[tag=host,scores={settings_state=1}] ~~~ effect @a weakness 1 0 true
 execute @a[tag=host] ~~~ scoreboard players add @s anim_timer 1
-execute @a[tag=host,scores={settings_state=1,anim_timer=1}] ~~~ title @a actionbar §4W§faiting to start...
-execute @a[tag=host,scores={settings_state=1,anim_timer=2}] ~~~ title @a actionbar W§4a§fiting to start...
-execute @a[tag=host,scores={settings_state=1,anim_timer=3}] ~~~ title @a actionbar Wa§4i§fting to start...
-execute @a[tag=host,scores={settings_state=1,anim_timer=4}] ~~~ title @a actionbar Wai§4t§fing to start...
-execute @a[tag=host,scores={settings_state=1,anim_timer=5}] ~~~ title @a actionbar Wait§4i§fng to start...
-execute @a[tag=host,scores={settings_state=1,anim_timer=6}] ~~~ title @a actionbar Waiti§4n§fg to start...
-execute @a[tag=host,scores={settings_state=1,anim_timer=7}] ~~~ title @a actionbar Waitin§4g§f to start...
-execute @a[tag=host,scores={settings_state=1,anim_timer=8}] ~~~ title @a actionbar Waiting §4t§fo start...
-execute @a[tag=host,scores={settings_state=1,anim_timer=9}] ~~~ title @a actionbar Waiting t§4o§f start...
-execute @a[tag=host,scores={settings_state=1,anim_timer=10}] ~~~ title @a actionbar Waiting to §4s§ftart...
-execute @a[tag=host,scores={settings_state=1,anim_timer=11}] ~~~ title @a actionbar Waiting to s§4t§fart...
-execute @a[tag=host,scores={settings_state=1,anim_timer=12}] ~~~ title @a actionbar Waiting to st§4a§frt...
-execute @a[tag=host,scores={settings_state=1,anim_timer=13}] ~~~ title @a actionbar Waiting to sta§4r§ft...
-execute @a[tag=host,scores={settings_state=1,anim_timer=14}] ~~~ title @a actionbar Waiting to star§4t§f...
-execute @a[tag=host,scores={settings_state=1,anim_timer=15}] ~~~ title @a actionbar Waiting to start§4.§f..
-execute @a[tag=host,scores={settings_state=1,anim_timer=16}] ~~~ title @a actionbar Waiting to start.§4.§f.
-execute @a[tag=host,scores={settings_state=1,anim_timer=17}] ~~~ title @a actionbar Waiting to start..§4.§f
-execute @a[tag=host,scores={settings_state=1,anim_timer=18}] ~~~ title @a actionbar Waiting to start...
-execute @a[tag=host,scores={settings_state=1,anim_timer=19..40}] ~~~ title @a actionbar Waiting to start...
+execute @a[tag=host,scores={autostart=0,settings_state=1,anim_timer=1}] ~~~ title @a actionbar §eW§faiting to start...
+execute @a[tag=host,scores={autostart=0,settings_state=1,anim_timer=2}] ~~~ title @a actionbar W§ea§fiting to start...
+execute @a[tag=host,scores={autostart=0,settings_state=1,anim_timer=3}] ~~~ title @a actionbar Wa§ei§fting to start...
+execute @a[tag=host,scores={autostart=0,settings_state=1,anim_timer=4}] ~~~ title @a actionbar Wai§et§fing to start...
+execute @a[tag=host,scores={autostart=0,settings_state=1,anim_timer=5}] ~~~ title @a actionbar Wait§ei§fng to start...
+execute @a[tag=host,scores={autostart=0,settings_state=1,anim_timer=6}] ~~~ title @a actionbar Waiti§en§fg to start...
+execute @a[tag=host,scores={autostart=0,settings_state=1,anim_timer=7}] ~~~ title @a actionbar Waitin§eg§f to start...
+execute @a[tag=host,scores={autostart=0,settings_state=1,anim_timer=8}] ~~~ title @a actionbar Waiting §et§fo start...
+execute @a[tag=host,scores={autostart=0,settings_state=1,anim_timer=9}] ~~~ title @a actionbar Waiting t§eo§f start...
+execute @a[tag=host,scores={autostart=0,settings_state=1,anim_timer=10}] ~~~ title @a actionbar Waiting to §es§ftart...
+execute @a[tag=host,scores={autostart=0,settings_state=1,anim_timer=11}] ~~~ title @a actionbar Waiting to s§et§fart...
+execute @a[tag=host,scores={autostart=0,settings_state=1,anim_timer=12}] ~~~ title @a actionbar Waiting to st§ea§frt...
+execute @a[tag=host,scores={autostart=0,settings_state=1,anim_timer=13}] ~~~ title @a actionbar Waiting to sta§er§ft...
+execute @a[tag=host,scores={autostart=0,settings_state=1,anim_timer=14}] ~~~ title @a actionbar Waiting to star§et§f...
+execute @a[tag=host,scores={autostart=0,settings_state=1,anim_timer=15}] ~~~ title @a actionbar Waiting to start§e.§f..
+execute @a[tag=host,scores={autostart=0,settings_state=1,anim_timer=16}] ~~~ title @a actionbar Waiting to start.§e.§f.
+execute @a[tag=host,scores={autostart=0,settings_state=1,anim_timer=17}] ~~~ title @a actionbar Waiting to start..§e.§f
+execute @a[tag=host,scores={autostart=0,settings_state=1,anim_timer=17}] ~~~ title @a actionbar Waiting to start...
 execute @a[tag=host,scores={anim_timer=40..}] ~~~ scoreboard players set @s anim_timer 0
 #autostart
 #autostart usuage:
@@ -51,6 +50,7 @@ execute @a[tag=host,scores={settings_state=2}] ~~~ execute @a[l=0,lm=0,scores={d
 execute @a[tag=host,scores={settings_state=2}] ~~~ execute @a[l=0,lm=0,scores={die_anim_timer=1..18}] ~~~ tp ~~~ ~ ~5
 execute @a[tag=host,scores={settings_state=2}] ~~~ execute @a[l=0,lm=0,scores={die_anim_timer=1..50}] ~~~ tp ~~0.01~
 execute @a[tag=host,scores={settings_state=2}] ~~~ execute @a[l=0,lm=0,tag=!dead] ~~~ title @s title You died!
+execute @a[tag=host,scores={settings_state=2}] ~~~ execute @a[l=0,lm=0,tag=host] ~~~ title @s actionbar Please do not leave until the game ends.
 execute @a[tag=host,scores={settings_state=2}] ~~~ tag @a[l=0,lm=0,tag=!dead,scores={die_anim_timer=51}] add dead
 
 #on chicken dinner/victory royale for forknife kidz
@@ -125,85 +125,8 @@ effect @a[tag=dead] weakness 1 255 true
 clear @a[tag=dead]
 
 execute @a[tag=host,scores={settings_state=2,timer=0..}] ~~~ scoreboard players remove @s spec_timeout 1
-execute @a[tag=host,scores={timer=1..,settings_state=2,spec_timeout=1..299}] ~~~ execute @a[tag=spec,rxm=-90,rx=-75] ~~~ tp @a[tag=dead] ^-0.5 ^ ^-1 facing ^-0.5 ^ ^1
-execute @a[tag=host,scores={timer=1..,settings_state=2,spec_timeout=1..299}] ~~~ execute @a[tag=spec,rxm=-74,rx=74] ~~~ tp @a[tag=dead] ^-0.5 ^0.5 ^-2 facing ^-0.5 ^0.5 ^1
-execute @a[tag=host,scores={timer=1..,settings_state=2,spec_timeout=1..299}] ~~~ execute @a[tag=spec,rxm=75,rx=90] ~~~ tp @a[tag=dead] ^-0.5 ^ ^-1 facing ^-0.5 ^ ^1
-execute @a[tag=host,scores={timer=1..,settings_state=2,spec_timeout=1..299}] ~~~ execute @a[tag=spec] ~~~ title @a[tag=dead] actionbar §lSpectating §e@s
-execute @a[tag=host,scores={timer=1..,settings_state=2,spec_timeout=..0}] ~~~ scoreboard players set @s spec_timeout 300
-
-#enchating stuff
-#pickaxe/axe/stuff
-enchant @s efficiency 2
-
-#removing ores/stones
-execute @a ~~~ fill ~7 90 ~7 ~-7 0 ~-7 iron_ore 0 replace lapis_ore
-execute @a ~~~ fill ~7 90 ~7 ~-7 0 ~-7 diamond_ore 0 replace redstone_ore
-execute @a ~~~ fill ~7 90 ~7 ~-7 0 ~-7 diamond_ore 0 replace emerald_ore
-execute @a ~~~ fill ~7 90 ~7 ~-7 0 ~-7 diamond_ore 0 replace gold_ore
-execute @a ~~~ fill ~7 90 ~7 ~-7 0 ~-7 diamond_ore replace stone 1
-execute @a ~~~ fill ~7 90 ~7 ~-7 0 ~-7 coal_ore 0 replace stone 3
-execute @a ~~~ fill ~7 90 ~7 ~-7 0 ~-7 iron_ore 0 replace stone 5
-execute @a ~~~ fill ~7 150 ~7 ~-7 90 ~-7 diamond_ore 0 replace stone 1
-execute @a ~~~ fill ~7 150 ~7 ~-7 90 ~-7 coal_ore 0 replace stone 3
-execute @a ~~~ fill ~7 150 ~7 ~-7 90 ~-7 iron_ore 0 replace stone 5
-
-#cutclean
-execute @a ~~~ execute @e[name="Желязна руда",r=5] ~~~ give @p iron_ingot
-execute @a ~~~ execute @e[name="Železná ruda",r=5] ~~~ give @p iron_ingot
-execute @a ~~~ execute @e[name="Jernmalm",r=5] ~~~ give @p iron_ingot
-execute @a ~~~ execute @e[name="Eisenerz",r=5] ~~~ give @p iron_ingot
-execute @a ~~~ execute @e[name="Ορυκτός σίδηρος",r=5] ~~~ give @p iron_ingot
-execute @a ~~~ execute @e[name="Iron Ore",r=5] ~~~ give @p iron_ingot
-execute @a ~~~ execute @e[name="Iron Ore",r=5] ~~~ give @p iron_ingot
-execute @a ~~~ execute @e[name="Mineral de hierro",r=5] ~~~ give @p iron_ingot
-execute @a ~~~ execute @e[name="Mineral de hierro",r=5] ~~~ give @p iron_ingot
-execute @a ~~~ execute @e[name="Minerai de fer",r=5] ~~~ give @p iron_ingot
-execute @a ~~~ execute @e[name="Rautamalmi",r=5] ~~~ give @p iron_ingot
-execute @a ~~~ execute @e[name="Minerai de fer",r=5] ~~~ give @p iron_ingot
-execute @a ~~~ execute @e[name="Vasérc",r=5] ~~~ give @p iron_ingot
-execute @a ~~~ execute @e[name="Bijih Besi",r=5] ~~~ give @p iron_ingot
-execute @a ~~~ execute @e[name="Minerale di ferro",r=5] ~~~ give @p iron_ingot
-execute @a ~~~ execute @e[name="鉄鉱石",r=5] ~~~ give @p iron_ingot
-execute @a ~~~ execute @e[name="철광석",r=5] ~~~ give @p iron_ingot
-execute @a ~~~ execute @e[name="Jernmalm",r=5] ~~~ give @p iron_ingot
-execute @a ~~~ execute @e[name="IJzererts",r=5] ~~~ give @p iron_ingot
-execute @a ~~~ execute @e[name="Ruda żelaza",r=5] ~~~ give @p iron_ingot
-execute @a ~~~ execute @e[name="Minério de Ferro",r=5] ~~~ give @p iron_ingot
-execute @a ~~~ execute @e[name="Minério de Ferro",r=5] ~~~ give @p iron_ingot
-execute @a ~~~ execute @e[name="Железная руда",r=5] ~~~ give @p iron_ingot
-execute @a ~~~ execute @e[name="Železná ruda",r=5] ~~~ give @p iron_ingot
-execute @a ~~~ execute @e[name="Järnmalm",r=5] ~~~ give @p iron_ingot
-execute @a ~~~ execute @e[name="Demir Cevheri",r=5] ~~~ give @p iron_ingot
-execute @a ~~~ execute @e[name="Залізна руда",r=5] ~~~ give @p iron_ingot
-execute @a ~~~ execute @e[name="鐵礦石",r=5] ~~~ give @p iron_ingot
-execute @a ~~~ execute @e[name="铁矿石",r=5] ~~~ give @p iron_ingot
-
-execute @a ~~~ execute @e[name="Желязна руда",r=5] ~~~ kill
-execute @a ~~~ execute @e[name="Železná ruda",r=5] ~~~ kill
-execute @a ~~~ execute @e[name="Jernmalm",r=5] ~~~ kill
-execute @a ~~~ execute @e[name="Eisenerz",r=5] ~~~ kill
-execute @a ~~~ execute @e[name="Ορυκτός σίδηρος",r=5] ~~~ kill
-execute @a ~~~ execute @e[name="Iron Ore",r=5] ~~~ kill
-execute @a ~~~ execute @e[name="Iron Ore",r=5] ~~~ kill
-execute @a ~~~ execute @e[name="Mineral de hierro",r=5] ~~~ kill
-execute @a ~~~ execute @e[name="Mineral de hierro",r=5] ~~~ kill
-execute @a ~~~ execute @e[name="Rautamalmi",r=5] ~~~ kill
-execute @a ~~~ execute @e[name="Minerai de fer",r=5] ~~~ kill
-execute @a ~~~ execute @e[name="Minerai de fer",r=5] ~~~ kill
-execute @a ~~~ execute @e[name="Vasérc",r=5] ~~~ kill
-execute @a ~~~ execute @e[name="Bijih Besi",r=5] ~~~ kill
-execute @a ~~~ execute @e[name="鉄鉱石",r=5] ~~~ kill
-execute @a ~~~ execute @e[name="Minerale di ferro",r=5] ~~~ kill
-execute @a ~~~ execute @e[name="철광석",r=5] ~~~ kill
-execute @a ~~~ execute @e[name="Jernmalm",r=5] ~~~ kill
-execute @a ~~~ execute @e[name="IJzererts",r=5] ~~~ kill
-execute @a ~~~ execute @e[name="Ruda żelaza",r=5] ~~~ kill
-execute @a ~~~ execute @e[name="Minério de Ferro",r=5] ~~~ kill
-execute @a ~~~ execute @e[name="Железная руда",r=5] ~~~ kill
-execute @a ~~~ execute @e[name="Minério de Ferro",r=5] ~~~ kill
-execute @a ~~~ execute @e[name="Železná ruda",r=5] ~~~ kill
-execute @a ~~~ execute @e[name="Demir Cevheri",r=5] ~~~ kill
-execute @a ~~~ execute @e[name="Залізна руда",r=5] ~~~ kill
-execute @a ~~~ execute @e[name="Järnmalm",r=5] ~~~ kill
-execute @a ~~~ execute @e[name="铁矿石",r=5] ~~~ kill
-execute @a ~~~ execute @e[name="鐵礦石",r=5] ~~~ kill
+execute @a[tag=host,scores={timer=0..,settings_state=2,spec_timeout=1..299}] ~~~ execute @a[tag=spec,rxm=-90,rx=-75] ~~~ tp @a[tag=dead] ^-0.5 ^ ^-1 facing ^-0.5 ^ ^1
+execute @a[tag=host,scores={timer=0..,settings_state=2,spec_timeout=1..299}] ~~~ execute @a[tag=spec,rxm=-74,rx=74] ~~~ tp @a[tag=dead] ^-0.5 ^0.5 ^-2 facing ^-0.5 ^0.5 ^1
+execute @a[tag=host,scores={timer=0..,settings_state=2,spec_timeout=1..299}] ~~~ execute @a[tag=spec,rxm=75,rx=90] ~~~ tp @a[tag=dead] ^-0.5 ^ ^-1 facing ^-0.5 ^ ^1
+execute @a[tag=host,scores={timer=0..,settings_state=2,spec_timeout=1..299}] ~~~ execute @a[tag=spec] ~~~ title @a[tag=dead] actionbar §lSpectating §e@s
+execute @a[tag=host,scores={timer=0..,settings_state=2,spec_timeout=..0}] ~~~ scoreboard players set @s spec_timeout 300

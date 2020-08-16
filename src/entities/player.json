@@ -1,6 +1,5 @@
-
 {
-	"format_version": "1.8.0",
+	"format_version": "1.12.0",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "minecraft:player",
@@ -57,7 +56,7 @@
               "remove_effects": "bad_omen"
             }
         },
-        // ---- Standard player's caracteristics ----    	
+        // ---- NOT Standard player's caracteristics ----    	
         "minecraft:standard_player": {
             "minecraft:health": {
                 "value": 40,

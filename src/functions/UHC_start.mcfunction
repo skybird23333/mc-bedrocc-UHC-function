@@ -1,5 +1,5 @@
 execute @s[tag=host,scores={var_alive=2..}] ~~~ scoreboard players set @a[tag=host,scores={settings_state=1}] "settings_state" 2
-execute @s[tag=host,scores={var_alive=2..}] ~~~ function UHC_modules/spreadplayers
+execute @s[tag=host,scores={var_alive=2..}] ~~~ spreadplayers 0 0 50 240 @a[tag=!spec] 
 execute @s[tag=host,scores={var_alive=2..}] ~~~ xp 1l @a[tag=!spec] 
 execute @s[tag=host,scores={var_alive=2..}] ~~~ title @a subtitle §cBecome the last survivor and win!
 execute @s[tag=host,scores={var_alive=2..}] ~~~ title @a title §cUltra Hardcore
