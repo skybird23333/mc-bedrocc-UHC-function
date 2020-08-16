@@ -3,6 +3,7 @@ execute @s[tag=host,scores={settings_state=2,timer=11400}] ~~~ tellraw @a {"rawt
 execute @s[tag=host,scores={settings_state=2,timer=10800}] ~~~ tellraw @a {"rawtext":[{"text":"§ePVP will be turned on in §c1§e minute!"}]}
 execute @s[tag=host,scores={settings_state=2,timer=10200}] ~~~ tellraw @a {"rawtext":[{"text":"§ePVP has been turned on."}]}
 execute @s[tag=host,scores={settings_state=2,timer=10200}] ~~~ gamerule pvp true
+execute @a ~~~ enchant @s sharpness 2
 #heal
 execute @s[tag=host,scores={settings_state=2,settings_healing=1,timer=10800}] ~~~ effect @a saturation 1 255 true
 execute @s[tag=host,scores={settings_state=2,settings_healing=1,timer=10800}] ~~~ effect @a instant_health 1 255 true
