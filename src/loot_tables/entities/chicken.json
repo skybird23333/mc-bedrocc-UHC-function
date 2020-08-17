@@ -5,20 +5,8 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "minecraft:chicken",
-                    "weight": 1,
-                    "functions": [
-                        {
-                            "function": "furnace_smelt"
-                        },
-                        {
-                            "function": "looting_enchant",
-                            "count": {
-                                "min": 0,
-                                "max": 1
-                            }
-                        }
-                    ]
+                    "name": "minecraft:cooked_chicken",
+                    "weight": 1
                 }
             ]
         }
