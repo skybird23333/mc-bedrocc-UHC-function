@@ -6,7 +6,6 @@ scoreboard objectives add var_alive dummy
 scoreboard objectives add timer dummy
 scoreboard objectives add settings_healing dummy
 scoreboard objectives add settings_time dummy
-scoreboard objectives add die_anim_timer dummy
 scoreboard objectives add spec_timeout dummy
 scoreboard objectives add debug_tickspeed dummy
 scoreboard objectives add settings_gapple dummy

@@ -46,12 +46,8 @@ execute @a[tag=host,scores={settings_state=2}] ~~~ scoreboard players reset "§a
 #on player die
 scoreboard players add @s die_anim_timer 0
 #the crappy death animation
-execute @a[tag=host,scores={settings_state=2}] ~~~ execute @a[l=0,lm=0,scores={die_anim_timer=0..50}] ~~~ scoreboard players add @s die_anim_timer 1
-execute @a[tag=host,scores={settings_state=2}] ~~~ execute @a[l=0,lm=0,scores={die_anim_timer=1}] ~~~ tp ~ ~3 ~
-execute @a[tag=host,scores={settings_state=2}] ~~~ execute @a[l=0,lm=0,scores={die_anim_timer=1..18}] ~~~ tp ~~~ ~ ~5
-execute @a[tag=host,scores={settings_state=2}] ~~~ execute @a[l=0,lm=0,scores={die_anim_timer=1..50}] ~~~ tp ~~0.01~
 execute @a[tag=host,scores={settings_state=2}] ~~~ execute @a[l=0,lm=0,tag=!dead] ~~~ title @s title You died!
-execute @a[tag=host,scores={settings_state=2}] ~~~ tag @a[l=0,lm=0,tag=!dead,scores={die_anim_timer=51}] add dead
+execute @a[tag=host,scores={settings_state=2}] ~~~ tag @a[l=0,lm=0,tag=!dead] add dead
 
 #on chicken dinner/victory royale for forknife kidz
 execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ title @a subtitle §e@a[lm=1] won the game!
