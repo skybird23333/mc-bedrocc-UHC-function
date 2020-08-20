@@ -13,6 +13,7 @@ scoreboard objectives add settings_gapple dummy
 scoreboard objectives add settings_spec dummy
 scoreboard objectives add anim_timer dummy
 scoreboard objectives add start_timer dummy
+scoreboard objectives add debugger dummy
 # v THIS IS EXPERIMENTAL DO NOT TOUCH v
 scoreboard objectives add autostart dummy
 # ^ THIS IS EXPERIMENTAL DO NOT TOUCH ^

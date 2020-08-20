@@ -207,3 +207,15 @@ execute @a ~~~ execute @e[name="Залізна руда",r=5] ~~~ kill
 execute @a ~~~ execute @e[name="Järnmalm",r=5] ~~~ kill
 execute @a ~~~ execute @e[name="铁矿石",r=5] ~~~ kill
 execute @a ~~~ execute @e[name="鐵礦石",r=5] ~~~ kill
+
+
+#beta info
+execute @a[tag=host] ~~~ scoreboard players operation timer debugger = @s timer
+execute @a[tag=host] ~~~ scoreboard players operation var_alive debugger = @s var_alive
+execute @a[tag=host] ~~~ scoreboard players operation settings_state debugger = @s settings_state
+execute @a[tag=host] ~~~ scoreboard players operation spec_timeout debugger = @s spec_timeout
+execute @a[tag=host] ~~~ scoreboard players operation anim_timer debugger = @s 
+
+
+#a
+scoreboard objectives setdisplay list debugger
