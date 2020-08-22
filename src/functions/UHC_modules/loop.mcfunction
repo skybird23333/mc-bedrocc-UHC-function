@@ -1,3 +1,4 @@
+tellraw @a[tag=eventLister,tag=host] {"rawtext":[{"text":"loop is run"}]}
 execute @a[tag=host,scores={settings_state=1}] ~~~ effect @a weakness 1 0 true
 execute @a[tag=host] ~~~ scoreboard players add @s anim_timer 1
 execute @a[tag=host,scores={settings_state=1,anim_timer=1}] ~~~ title @a actionbar §4W§faiting to start...

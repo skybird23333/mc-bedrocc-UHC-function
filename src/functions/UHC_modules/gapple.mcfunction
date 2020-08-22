@@ -1,3 +1,4 @@
+tellraw @a[tag=eventLister,tag=host] {"rawtext":[{"text":"gapple is run"}]}
 execute @e[c=1,type=item,name=apple] ~~~ execute @a[r=2] ~~~ give @s appleenchanted
 execute @e[c=1,type=item,name=apple] ~~~ execute @a[r=2] ~~~ kill @e[type=item,c=1]
 execute @e[c=1,type=item,name=Ябълка] ~~~ execute @a[r=2] ~~~ give @s appleenchanted

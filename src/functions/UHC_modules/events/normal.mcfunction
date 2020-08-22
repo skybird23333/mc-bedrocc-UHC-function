@@ -1,3 +1,4 @@
+tellraw @a[tag=eventLister,tag=host] {"rawtext":[{"text":"normal is run"}]}
 #pvp disallow tiem
 execute @s[tag=host,scores={settings_state=2,timer=11400}] ~~~ tellraw @a {"rawtext":[{"text":"§ePVP will be turned on in §c2§e minutes!"}]}
 execute @s[tag=host,scores={settings_state=2,timer=10800}] ~~~ tellraw @a {"rawtext":[{"text":"§ePVP will be turned on in §c1§e minute!"}]}
