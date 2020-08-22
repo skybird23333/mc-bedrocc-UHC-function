@@ -22,6 +22,7 @@ scoreboard players set @s settings_time 0
 scoreboard players set @s settings_gapple 1
 scoreboard players set @s settings_spec 1
 scoreboard players set @s autostart 0
+gamerule domobspawning false
 #tp to 0,0
 scoreboard objectives setdisplay sidebar display
 spreadplayers 0 0 1 2 @s

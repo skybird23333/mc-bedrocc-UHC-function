@@ -205,6 +205,10 @@ execute @a ~~~ execute @e[name="铁矿石",r=5] ~~~ kill
 execute @a ~~~ execute @e[name="鐵礦石",r=5] ~~~ kill
 
 
+#remove mobs in pregame
+execute @a[tag=host,settings_state=1] ~~~ tp @e[type=!player] 42069 420 42069
+
+
 #beta info
 execute @a[tag=host] ~~~ scoreboard players operation timer debugger = @s timer
 execute @a[tag=host] ~~~ scoreboard players operation var_alive debugger = @s var_alive
