@@ -222,7 +222,7 @@ execute @a[tag=host] ~~~ scoreboard players operation timer debugger = @s timer
 execute @a[tag=host] ~~~ scoreboard players operation var_alive debugger = @s var_alive
 execute @a[tag=host] ~~~ scoreboard players operation settings_state debugger = @s settings_state
 execute @a[tag=host] ~~~ scoreboard players operation spec_timeout debugger = @s spec_timeout
-execute @a[tag=host] ~~~ scoreboard plays operation anim_timer debugger = @s anim_timer
+execute @a[tag=host] ~~~ scoreboard players operation anim_timer debugger = @s anim_timer
 
 
 #a
