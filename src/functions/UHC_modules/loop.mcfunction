@@ -64,7 +64,7 @@ execute @a[tag=host,scores={settings_state=0}] ~~~ effect @a instant_health 1 25
 execute @a[tag=host,scores={settings_state=1}] ~~~ effect @a instant_health 1 255 true
 #something else
 execute @a[tag=host,scores={settings_state=1}] ~~~ gamemode adventure @a
-execute @a[tag=host,scores={settings_state=2}] ~~~ gamemode survival @a
+execute @a[tag=host,scores={settings_state=2}] ~~~ gamemode survival @a[tag=!dead]
 execute @a[tag=host,scores={settings_state=1}] ~~~ gamemode adventure @a
 #events for different time settings
 execute @s[tag=host,scores={settings_state=2,settings_time=0}] ~~~ function UHC_modules/events/normal
