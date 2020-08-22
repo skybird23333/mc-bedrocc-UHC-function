@@ -106,6 +106,8 @@ execute @s[tag=host,scores={settings_state=2,timer=0}] ~~~ tp @a[lm=1] 0 102 0
 #disabling stuff
 fill ~10 ~10 ~10 ~-10 ~-10 ~-10 air 0 replace end_portal
 fill ~10 ~10 ~10 ~-10 ~-10 ~-10 air 0 replace portal
+clear @a anvil
+clear @a enchanting_table
 
 execute @s[tag=host,scores={settings_gapple=1}] ~~~ function UHC_modules/gapple
 execute @s[tag=host,scores={settings_spec=1}] ~~~ function UHC_modules/spectate

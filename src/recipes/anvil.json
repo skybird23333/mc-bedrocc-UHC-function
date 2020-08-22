@@ -2,7 +2,7 @@
   "format_version": "1.12",
   "minecraft:recipe_shaped": {
     "description": {
-    "identifier": "minecraft:enchanting_table"
+    "identifier": "minecraft:anvil"
     },
 
     
@@ -16,10 +16,11 @@
       },
       "C": {
         "item": "minecraft:barrier"
-      }
-    },
+    }
+  },
     "result": {
-      "item": "minecraft:enchanting_table"
+      "item": "minecraft:anvil",
+      "data": 0
     }
   }
 }
