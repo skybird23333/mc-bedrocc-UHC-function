@@ -226,4 +226,4 @@ execute @a[tag=host] ~~~ scoreboard players operation anim_timer debugger = @s a
 
 
 #a
-scoreboard objectives setdisplay list debugger
+#scoreboard objectives setdisplay list debugger
