@@ -212,10 +212,8 @@ execute @a[tag=host] ~~~ execute @a ~~~ scoreboard players set @e[r=10,type=!pla
 execute @a[tag=host] ~~~ scoreboard players remove @e[type=!player] despawn_timer 1
 execute @a[tag=host] ~~~ execute @e[scores={despawn_timer=..-200},type=!player] ~~~ tp ~ -5 ~
 
-
 #remove mobs in pregame
 execute @a[tag=host,scores={settings_state=1}] ~~~ tp @e[type=!player] 42069 420 42069
-
 
 #beta info
 execute @a[tag=host] ~~~ scoreboard players operation timer debugger = @s timer
@@ -223,7 +221,6 @@ execute @a[tag=host] ~~~ scoreboard players operation var_alive debugger = @s va
 execute @a[tag=host] ~~~ scoreboard players operation settings_state debugger = @s settings_state
 execute @a[tag=host] ~~~ scoreboard players operation spec_timeout debugger = @s spec_timeout
 execute @a[tag=host] ~~~ scoreboard players operation anim_timer debugger = @s anim_timer
-
 
 #a
 scoreboard objectives setdisplay list debugger
