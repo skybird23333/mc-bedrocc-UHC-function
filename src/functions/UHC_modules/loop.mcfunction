@@ -63,13 +63,29 @@ execute @a[tag=host,scores={settings_state=2}] ~~~ execute @a[scores={deathCount
 execute @a[tag=host,scores={settings_state=2}] ~~~ tag @a[scores={deathCount=1},tag=!dead] add dead
 
 #on chicken dinner/victory royale for forknife players
+execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ fill 5 200 5 -5 202 -5 air
+execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ fill 5 200 5 -5 200 -5 quartz_block
+execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ fill 1 200 1 -1 200 -1 diamond_block
+execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ fill 3 201 3 -3 201 -3 iron_block
+execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ fill 2 201 2 -2 201 -2 gold_block
+execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ setblock 0 201 0 beacon
+execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ setblock 1 202 0 diamond_block
+execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ setblock -1 202 0 diamond_block
+execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ setblock 0 202 1 diamond_block
+execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ setblock 0 202 -1 diamond_block
+execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ setblock 0 202 0 glass
+execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ tp @a[tag=dead] -3 201 -3
+execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ tp @a[tag=!dead] 0 204 0
+execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ playsound block.bell.hit @s ~~~ 1 10
 execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ title @a subtitle §e@a[tag=!dead] won the game!
 execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ title @a title §cGame ended
-execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ title @a[tag=!dead] subtitle §eCongrats!
-execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ title @a[tag=!dead] title §eYou have won!
+execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ title @a[tag=!dead] subtitle §ewinner winner chicken dinner
+execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ title @a[tag=!dead] title §eYou have won the game!
+execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ playsound record.chirp @a
 execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ effect @a slow_falling 90 0 true
 execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ scoreboard objectives setdisplay sidebar
 execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ scoreboard players set @s settings_state 0
+execute @s[tag=host,scores={settings_state=0}] ~~~ particle minecraft:totem_particle 0 203 0
 #rules
 kill @e[type=xp_orb]
 execute @s[tag=host,scores={settings_state=2,timer=0..}] ~~~ scoreboard players remove @s timer 1
