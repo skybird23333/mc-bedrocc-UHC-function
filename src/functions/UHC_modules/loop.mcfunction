@@ -25,6 +25,7 @@ execute @a[tag=host,scores={anim_timer=40..}] ~~~ scoreboard players set @s anim
 #autostart usuage:
 #SCOREBOARD players set start_timer to time u want in secs
 #SCOREBOARD players set autostart 1
+#its stupid so it will no longer work
 execute @a[tag=host,scores={settings_state=1,autostart=1..}] ~~~ scoreboard players operation @s start_timer = @s autostart
 execute @a[tag=host,scores={settings_state=1,autostart=1..,anim_timer=5}] ~~~ scoreboard players remove @s start_timer 1
 execute @a[tag=host,scores={settings_state=1,autostart=1..,anim_timer=15}] ~~~ scoreboard players remove @s start_timer 1
@@ -50,7 +51,7 @@ scoreboard players add @s die_anim_timer 0
 execute @a[tag=host,scores={settings_state=2}] ~~~ execute @a[l=0,lm=0,tag=!dead] ~~~ title @s title You died!
 execute @a[tag=host,scores={settings_state=2}] ~~~ tag @a[l=0,lm=0,tag=!dead] add dead
 
-#on chicken dinner/victory royale for forknife kidz
+#on chicken dinner/victory royale for forknife players
 execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ title @a subtitle §e@a[lm=1] won the game!
 execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ title @a title §cGame ended
 execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ title @a[lm=1] subtitle §eCongrats!
@@ -70,8 +71,7 @@ execute @a[tag=host,scores={settings_state=1}] ~~~ gamemode adventure @a
 #events for different time settings
 execute @s[tag=host,scores={settings_state=2,settings_time=0}] ~~~ function UHC_modules/events/normal
 execute @s[tag=host,scores={settings_state=2,settings_time=1}] ~~~ function UHC_modules/events/long
-#deathmatch(since this is global why not put it here)
-#if the last few players were all noob/pro and they could not kill each other for 20 mins
+#deathmatch
 #one second = 20 ticks(usually)
 execute @s[tag=host,scores={settings_state=2,timer=9000}] ~~~ tellraw @a {"rawtext":[{"text":"§eDeathmatch in 15 minutes!"}]}
 execute @s[tag=host,scores={settings_state=2,timer=6000}] ~~~ tellraw @a {"rawtext":[{"text":"§eDeathmatch in 10 minutes!"}]}
