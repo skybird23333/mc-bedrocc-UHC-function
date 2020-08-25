@@ -59,7 +59,11 @@ execute @a[tag=host,scores={settings_state=2}] ~~~ scoreboard players set @a[sco
 execute @a[tag=host,scores={settings_state=2}] ~~~ scoreboard players set @e[type=player,scores={death=0}] died 0
 #death counter code by HongyiMC
 #sorry about ur yt bro, just tell me if you want this gone
-execute @a[tag=host,scores={settings_state=2}] ~~~ execute @a[scores={deathCount=1},tag=!dead] ~~~ title @s title You died!
+execute @a[tag=host,scores={settings_state=2}] ~~~ execute @a[scores={deathCount=1},tag=!dead] ~~~ title @s subtitle Better luck next time.
+execute @a[tag=host,scores={settings_state=2}] ~~~ execute @a[scores={deathCount=1},tag=!dead] ~~~ title @s title Eliminated
+execute @a[tag=host,scores={settings_state=2}] ~~~ execute @a[scores={deathCount=1},tag=!dead] ~~~ summon lightning_bolt ~~3~
+execute @a[tag=host,scores={settings_state=2}] ~~~ execute @a[scores={deathCount=1},tag=!dead] ~~~ playsound block.bell.hit @a ~~~ 1 0.2
+execute @a[tag=host,scores={settings_state=2}] ~~~ execute @a[scores={deathCount=1},tag=!dead] ~~~ playsound block.bell.hit @s ~~~ 1 3
 execute @a[tag=host,scores={settings_state=2}] ~~~ tag @a[scores={deathCount=1},tag=!dead] add dead
 
 #on chicken dinner/victory royale for forknife players
@@ -78,9 +82,8 @@ execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ tp @a[tag=dead] -
 execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ tp @a[tag=!dead] 0 204 0
 execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ playsound block.bell.hit @s ~~~ 1 10
 execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ title @a subtitle §e@a[tag=!dead] won the game!
-execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ title @a title §cGame ended
-execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ title @a[tag=!dead] subtitle §ewinner winner chicken dinner
-execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ title @a[tag=!dead] title §eYou have won the game!
+execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ title @a[tag=!dead] subtitle Winner winner chicken dinner!
+execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ title @a title §eMatch ended
 execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ playsound record.chirp @a
 execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ effect @a slow_falling 90 0 true
 execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ scoreboard objectives setdisplay sidebar
@@ -141,7 +144,9 @@ execute @s[tag=host,scores={settings_spec=0}] ~~~ tp @a[tag=dead] 0 300 0
 execute @s[tag=host,scores={settings_spec=0}] ~~~ title @a[tag=dead] actionbar Spectating is disabled.
 
 #HAHA this is still enabled
+#things for dead people(no offense)
 gamemode 2 @a[tag=dead]
+execute @a[tag=dead] ~~~ function UHC_modules/barrierInv
 effect @a[tag=dead] invisibility 1 255 true
 effect @a[tag=dead] fire_resistance 1 255 true
 effect @a[tag=dead] instant_health 1 255 true
@@ -231,6 +236,38 @@ execute @a ~~~ execute @e[name="Залізна руда",r=5] ~~~ kill
 execute @a ~~~ execute @e[name="Järnmalm",r=5] ~~~ kill
 execute @a ~~~ execute @e[name="铁矿石",r=5] ~~~ kill
 execute @a ~~~ execute @e[name="鐵礦石",r=5] ~~~ kill
+
+#remove barrrier
+execute @e[type=item,name="Bariéra"] ~~~ kill
+execute @e[type=item,name="Бариера"] ~~~ kill
+execute @e[type=item,name="Barriere"] ~~~ kill
+execute @e[type=item,name="Barriere"] ~~~ kill
+execute @e[type=item,name="Εμπόδιο"] ~~~ kill
+execute @e[type=item,name="Barrier"] ~~~ kill
+execute @e[type=item,name="Barrier"] ~~~ kill
+execute @e[type=item,name="Barrera"] ~~~ kill
+execute @e[type=item,name="Este"] ~~~ kill
+execute @e[type=item,name="Barrera"] ~~~ kill
+execute @e[type=item,name="Barrière"] ~~~ kill
+execute @e[type=item,name="Barrière invisible"] ~~~ kill
+execute @e[type=item,name="Akadály"] ~~~ kill
+execute @e[type=item,name="Penghalang"] ~~~ kill
+execute @e[type=item,name="Barriera"] ~~~ kill
+execute @e[type=item,name="バリアブロック"] ~~~ kill
+execute @e[type=item,name="방벽"] ~~~ kill
+execute @e[type=item,name="Barriere"] ~~~ kill
+execute @e[type=item,name="Barrière"] ~~~ kill
+execute @e[type=item,name="Bariera"] ~~~ kill
+execute @e[type=item,name="Barreira"] ~~~ kill
+execute @e[type=item,name="Barreira"] ~~~ kill
+execute @e[type=item,name="Барьер"] ~~~ kill
+execute @e[type=item,name="Barriär"] ~~~ kill
+execute @e[type=item,name="Bariéra"] ~~~ kill
+execute @e[type=item,name="Bariyer"] ~~~ kill
+execute @e[type=item,name="Бар’єр"] ~~~ kill
+execute @e[type=item,name="屏障"] ~~~ kill
+execute @e[type=item,name="屏障"] ~~~ kill
+
 
 #despawn
 execute @a[tag=host] ~~~ execute @a ~~~ scoreboard players set @e[r=10,type=!player] despawn_timer 0
