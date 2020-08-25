@@ -1,5 +1,5 @@
 #scoreboard setup
-scoreboard objectives add display dummy "§l§4Ultra§c Hardcore"
+scoreboard objectives add display dummy "§lUHC"
 scoreboard objectives add counter dummy
 scoreboard objectives add settings_state dummy
 scoreboard objectives add var_alive dummy
