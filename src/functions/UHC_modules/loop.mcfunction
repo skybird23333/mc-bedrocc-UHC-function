@@ -40,22 +40,33 @@ execute @a[tag=host,scores={settings_state=1,autostart=1..,start_timer=0}] ~~~ f
 #alive player counter 
 scoreboard players set @a[tag=host] var_alive 0
 scoreboard players set @a counter 1
-execute @a[tag=host,scores={settings_state=2}] ~~~ execute @a[lm=1] ~~~ scoreboard players operation @a[tag=host] var_alive += @s counter
+execute @a[tag=host,scores={settings_state=2}] ~~~ execute @a[tag=!dead] ~~~ scoreboard players operation @a[tag=host] var_alive += @s counter
 execute @a[tag=host,scores={settings_state=1}] ~~~ execute @a ~~~ scoreboard players operation @a[tag=host] var_alive += @s counter
 execute @a[tag=host,scores={settings_state=1}] ~~~ scoreboard players operation  "§aJoined: " display = @a[tag=host] var_alive
 execute @a[tag=host,scores={settings_state=2}] ~~~ scoreboard players operation  "§aPlayers Alive: " display = @a[tag=host] var_alive
 execute @a[tag=host,scores={settings_state=2}] ~~~ scoreboard players reset "§aJoined: " display
 #on player die
 scoreboard players add @s die_anim_timer 0
-#the crappy death animation
-execute @a[tag=host,scores={settings_state=2}] ~~~ execute @a[l=0,lm=0,tag=!dead] ~~~ title @s title You died!
-execute @a[tag=host,scores={settings_state=2}] ~~~ tag @a[l=0,lm=0,tag=!dead] add dead
+#commiting die
+execute @a[tag=host,scores={settings_state=2}] ~~~ tag @a add check
+execute @a[tag=host,scores={settings_state=2}] ~~~ tag @e[type=player] remove check
+execute @a[tag=host,scores={settings_state=2}] ~~~ tag @e[type=player] add task
+execute @a[tag=host,scores={settings_state=2}] ~~~ tag @a[tag=check] remove task
+execute @a[tag=host,scores={settings_state=2}] ~~~ scoreboard players set @a death 1
+execute @a[tag=host,scores={settings_state=2}] ~~~ scoreboard players set @e[type=player] death 0
+execute @a[tag=host,scores={settings_state=2}] ~~~ scoreboard players add @a[scores={death=1,died=0}] deathCount 1
+execute @a[tag=host,scores={settings_state=2}] ~~~ scoreboard players set @a[scores={death=1,died=0}] died 1
+execute @a[tag=host,scores={settings_state=2}] ~~~ scoreboard players set @e[type=player,scores={death=0}] died 0
+#death counter code by HongyiMC
+#sorry about ur yt bro, just tell me if you want this gone
+execute @a[tag=host,scores={settings_state=2}] ~~~ execute @a[scores={deathCount=1},tag=!dead] ~~~ title @s title You died!
+execute @a[tag=host,scores={settings_state=2}] ~~~ tag @a[scores={deathCount=1},tag=!dead] add dead
 
 #on chicken dinner/victory royale for forknife players
-execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ title @a subtitle §e@a[lm=1] won the game!
+execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ title @a subtitle §e@a[tag=!dead] won the game!
 execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ title @a title §cGame ended
-execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ title @a[lm=1] subtitle §eCongrats!
-execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ title @a[lm=1] title §eYou have won!
+execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ title @a[tag=!dead] subtitle §eCongrats!
+execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ title @a[tag=!dead] title §eYou have won!
 execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ effect @a slow_falling 90 0 true
 execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ scoreboard objectives setdisplay sidebar
 execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ scoreboard players set @s settings_state 0
@@ -103,12 +114,10 @@ execute @s[tag=host,scores={settings_state=2,timer=0}] ~~~ fill 10 103 10 10 103
 execute @s[tag=host,scores={settings_state=2,timer=0}] ~~~ fill 10 103 -10 -10 103 -10 lava
 execute @s[tag=host,scores={settings_state=2,timer=0}] ~~~ fill -10 103 -10 -10 103 10 lava
 execute @s[tag=host,scores={settings_state=2,timer=0}] ~~~ fill -10 103 10 10 103 10 lava
-execute @s[tag=host,scores={settings_state=2,timer=0}] ~~~ tp @a[lm=1] 0 102 0
+execute @s[tag=host,scores={settings_state=2,timer=0}] ~~~ tp @a[tag=!dead] 0 102 0
 #disabling stuff
 fill ~10 ~10 ~10 ~-10 ~-10 ~-10 air 0 replace end_portal
 fill ~10 ~10 ~10 ~-10 ~-10 ~-10 air 0 replace portal
-clear @a anvil
-clear @a enchanting_table
 
 execute @s[tag=host,scores={settings_gapple=1}] ~~~ function UHC_modules/gapple
 execute @s[tag=host,scores={settings_spec=1}] ~~~ function UHC_modules/spectate
