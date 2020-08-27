@@ -312,7 +312,8 @@ execute @e[c=1,type=item,name="Björkplanta"] ~~~ kill
 execute @e[c=1,type=item,name="桦树苗"] ~~~ kill
 execute @e[c=1,type=item,name="Ungbjørk"] ~~~ kill
 execute @e[c=1,type=item,name="Birkensetzling"] ~~~ kill
-execute @e[c=1,type=item,name="樺樹樹苗"] ~~~ killexecute @e[c=1,type=item,name="Sazenice sekvoje"] ~~~ kill
+execute @e[c=1,type=item,name="樺樹樹苗"] ~~~ kill
+execute @e[c=1,type=item,name="Sazenice sekvoje"] ~~~ kill
 execute @e[c=1,type=item,name="Фиданка на дърво от джунглата"] ~~~ kill
 execute @e[c=1,type=item,name="Tropenbaumsetzling"] ~~~ kill
 execute @e[c=1,type=item,name="Stikling fra jungletræ"] ~~~ kill
