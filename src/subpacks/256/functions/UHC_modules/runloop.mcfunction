@@ -57,3 +57,5 @@ execute @s ~ ~ ~ fill ~0 0 -128 ~16 255 -128 air 0 replace tallgrass
 execute @s ~ ~ ~ fill ~0 0 -128 ~-16 255 -128 air 0 replace tallgrass
 execute @s ~ ~ ~ fill ~0 0 128 ~16 255 128 air 0 replace tallgrass
 execute @s ~ ~ ~ fill ~0 0 128 ~-16 255 128 air 0 replace tallgrass
+
+scoreboard players set "§a+128,-128" display -6

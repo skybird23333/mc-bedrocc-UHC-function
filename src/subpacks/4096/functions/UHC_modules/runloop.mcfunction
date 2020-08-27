@@ -57,3 +57,5 @@ execute @s ~ ~ ~ fill ~0 0 -2048 ~16 255 -2048 air 0 replace tallgrass
 execute @s ~ ~ ~ fill ~0 0 -2048 ~-16 255 -2048 air 0 replace tallgrass
 execute @s ~ ~ ~ fill ~0 0 2048 ~16 255 2048 air 0 replace tallgrass
 execute @s ~ ~ ~ fill ~0 0 2048 ~-16 255 2048 air 0 replace tallgrass
+
+scoreboard players set "§a+2048,-2048" display -6
