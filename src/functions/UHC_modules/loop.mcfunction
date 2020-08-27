@@ -151,7 +151,6 @@ effect @a[tag=dead] invisibility 1 255 true
 effect @a[tag=dead] fire_resistance 1 255 true
 effect @a[tag=dead] instant_health 1 255 true
 effect @a[tag=dead] weakness 1 255 true
-clear @a[tag=dead]
 
 execute @a[tag=host,scores={settings_state=2,timer=0..}] ~~~ scoreboard players remove @s spec_timeout 1
 execute @a[tag=host,scores={timer=1..,settings_state=2,spec_timeout=1..299}] ~~~ execute @a[tag=spec,rxm=-90,rx=-75] ~~~ tp @a[tag=dead] ^-0.5 ^ ^-1 facing ^-0.5 ^ ^1
