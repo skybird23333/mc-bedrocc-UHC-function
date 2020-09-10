@@ -1,24 +1,11 @@
 # Minecraft UHC FUNCTION  
 <img alt="GitHub tag (latest by date)" src="https://img.shields.io/github/v/tag/skybird23333/mc-bedrocc-UHC-function"> <img alt="Supported Bedrock Version" src="https://img.shields.io/badge/bedrock-1.14%20or%20above-brightgreen"> <img alt="Supported Education Edition Version because why not" src="https://img.shields.io/badge/education-yes-brightgreen"> <img alt="GitHub Releases" src="https://img.shields.io/github/downloads/skybird23333/mc-bedrocc-UHC-function/latest/total"> <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/skybird23333/mc-bedrocc-UHC-function"> <img alt="Discord" src="https://img.shields.io/discord/609752473204293643?label=dead%20chat">
 
-This project is were all the source is for the minecraft bedrock UHC function. [MCPEDL Page](https://mcpedl.com/user/skybird23333) 
+This project is were all the source is for the minecraft bedrock UHC function. [MCPEDL Page](https://mcpedl.com/uhc-function-addon) 
 
 ## Installation
 
-1. Download the .mpcack from the root of this repo or goto mcpedl and download.
-2. After that, run the mcpack file and let it install
-3. After it's installed, Create a new world and on behaviour packs select the UHC function.
-
-## Usage
-
-1. Once everything is ready and you have created the world, type `/function UHC_setup`
-2. You can now change settings with `/function UHC_settings/[option]/[value]`
-3. then type `/function UHC_start`
-
-## Settings
-
-You can change certain options by using `/function UHC_settings/[option]/[value]`.  
-Check out the MCPEDL page for more info on settings.
+Refer to the [wiki](https://github.com/skybird23333/mc-bedrocc-UHC-function/wiki/Installation) to use the pack.
 
 ## Contributing
 
