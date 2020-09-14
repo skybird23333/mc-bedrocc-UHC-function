@@ -1,15 +1,10 @@
 #scoreboard setup
 scoreboard objectives add display dummy "§lUHC"
-scoreboard objectives add counter dummy
-scoreboard objectives add settings_state dummy
-scoreboard objectives add var_alive dummy
 scoreboard objectives add timer dummy
-scoreboard objectives add settings_healing dummy
-scoreboard objectives add settings_time dummy
+scoreboard objectives add counter dummy
 scoreboard objectives add spec_timeout dummy
+scoreboard objectives add var_alive dummy
 scoreboard objectives add debug_tickspeed dummy
-scoreboard objectives add settings_gapple dummy
-scoreboard objectives add settings_spec dummy
 scoreboard objectives add anim_timer dummy
 scoreboard objectives add start_timer dummy
 scoreboard objectives add debugger dummy
@@ -17,6 +12,12 @@ scoreboard objectives add despawn_timer dummy
 scoreboard objectives add death dummy
 scoreboard objectives add died dummy
 scoreboard objectives add deathCount dummy
+scoreboard objectives add settings_state dummy
+scoreboard objectives add settings_healing dummy
+scoreboard objectives add settings_time dummy
+scoreboard objectives add settings_gapple dummy
+scoreboard objectives add settings_spec dummy
+scoreboard objectives add settings_autosmelt dummy
 # v THIS IS EXPERIMENTAL DO NOT TOUCH v
 scoreboard objectives add autostart dummy
 # ^ THIS IS EXPERIMENTAL DO NOT TOUCH ^
@@ -25,6 +26,7 @@ scoreboard players set @s settings_healing 1
 scoreboard players set @s settings_time 0
 scoreboard players set @s settings_gapple 1
 scoreboard players set @s settings_spec 1
+scoreboard players set @s settings_autosmelt 1
 scoreboard players set @s autostart 0
 gamerule domobspawning false
 #tp to 0,0

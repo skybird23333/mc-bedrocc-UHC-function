@@ -137,7 +137,8 @@ execute @s[tag=host,scores={settings_state=2,timer=0}] ~~~ tp @a[tag=!dead] 0 10
 #disabling stuff
 fill ~10 ~10 ~10 ~-10 ~-10 ~-10 air 0 replace end_portal
 fill ~10 ~10 ~10 ~-10 ~-10 ~-10 air 0 replace portal
-
+#settings
+execute @s[tag=host,scores={settings_autosmelt=1}] ~~~ function UHC_modules/autosmelt
 execute @s[tag=host,scores={settings_gapple=1}] ~~~ function UHC_modules/gapple
 execute @s[tag=host,scores={settings_spec=1}] ~~~ function UHC_modules/spectate
 execute @s[tag=host,scores={settings_spec=0}] ~~~ tp @a[tag=dead] 0 300 0
@@ -173,96 +174,7 @@ execute @a ~~~ fill ~7 150 ~7 ~-7 90 ~-7 diamond_ore 0 replace stone 1
 execute @a ~~~ fill ~7 150 ~7 ~-7 90 ~-7 coal_ore 0 replace stone 3
 execute @a ~~~ fill ~7 150 ~7 ~-7 90 ~-7 iron_ore 0 replace stone 5
 
-#cutclean
-execute @a ~~~ execute @e[name="Желязна руда",r=5] ~~~ give @p iron_ingot
-execute @a ~~~ execute @e[name="Železná ruda",r=5] ~~~ give @p iron_ingot
-execute @a ~~~ execute @e[name="Jernmalm",r=5] ~~~ give @p iron_ingot
-execute @a ~~~ execute @e[name="Eisenerz",r=5] ~~~ give @p iron_ingot
-execute @a ~~~ execute @e[name="Ορυκτός σίδηρος",r=5] ~~~ give @p iron_ingot
-execute @a ~~~ execute @e[name="Iron Ore",r=5] ~~~ give @p iron_ingot
-execute @a ~~~ execute @e[name="Iron Ore",r=5] ~~~ give @p iron_ingot
-execute @a ~~~ execute @e[name="Mineral de hierro",r=5] ~~~ give @p iron_ingot
-execute @a ~~~ execute @e[name="Mineral de hierro",r=5] ~~~ give @p iron_ingot
-execute @a ~~~ execute @e[name="Minerai de fer",r=5] ~~~ give @p iron_ingot
-execute @a ~~~ execute @e[name="Rautamalmi",r=5] ~~~ give @p iron_ingot
-execute @a ~~~ execute @e[name="Minerai de fer",r=5] ~~~ give @p iron_ingot
-execute @a ~~~ execute @e[name="Vasérc",r=5] ~~~ give @p iron_ingot
-execute @a ~~~ execute @e[name="Bijih Besi",r=5] ~~~ give @p iron_ingot
-execute @a ~~~ execute @e[name="Minerale di ferro",r=5] ~~~ give @p iron_ingot
-execute @a ~~~ execute @e[name="鉄鉱石",r=5] ~~~ give @p iron_ingot
-execute @a ~~~ execute @e[name="철광석",r=5] ~~~ give @p iron_ingot
-execute @a ~~~ execute @e[name="Jernmalm",r=5] ~~~ give @p iron_ingot
-execute @a ~~~ execute @e[name="IJzererts",r=5] ~~~ give @p iron_ingot
-execute @a ~~~ execute @e[name="Ruda żelaza",r=5] ~~~ give @p iron_ingot
-execute @a ~~~ execute @e[name="Minério de Ferro",r=5] ~~~ give @p iron_ingot
-execute @a ~~~ execute @e[name="Minério de Ferro",r=5] ~~~ give @p iron_ingot
-execute @a ~~~ execute @e[name="Железная руда",r=5] ~~~ give @p iron_ingot
-execute @a ~~~ execute @e[name="Železná ruda",r=5] ~~~ give @p iron_ingot
-execute @a ~~~ execute @e[name="Järnmalm",r=5] ~~~ give @p iron_ingot
-execute @a ~~~ execute @e[name="Demir Cevheri",r=5] ~~~ give @p iron_ingot
-execute @a ~~~ execute @e[name="Залізна руда",r=5] ~~~ give @p iron_ingot
-execute @a ~~~ execute @e[name="鐵礦石",r=5] ~~~ give @p iron_ingot
-execute @a ~~~ execute @e[name="铁矿石",r=5] ~~~ give @p iron_ingot
 
-execute @a ~~~ execute @e[name="Желязна руда",r=5] ~~~ xp 2 @p
-execute @a ~~~ execute @e[name="Železná ruda",r=5] ~~~ xp 2 @p
-execute @a ~~~ execute @e[name="Jernmalm",r=5] ~~~ xp 2 @p
-execute @a ~~~ execute @e[name="Eisenerz",r=5] ~~~ xp 2 @p
-execute @a ~~~ execute @e[name="Ορυκτός σίδηρος",r=5] ~~~ xp 2 @p
-execute @a ~~~ execute @e[name="Iron Ore",r=5] ~~~ xp 2 @p
-execute @a ~~~ execute @e[name="Iron Ore",r=5] ~~~ xp 2 @p
-execute @a ~~~ execute @e[name="Mineral de hierro",r=5] ~~~ xp 2 @p
-execute @a ~~~ execute @e[name="Mineral de hierro",r=5] ~~~ xp 2 @p
-execute @a ~~~ execute @e[name="Minerai de fer",r=5] ~~~ xp 2 @p
-execute @a ~~~ execute @e[name="Rautamalmi",r=5] ~~~ xp 2 @p
-execute @a ~~~ execute @e[name="Minerai de fer",r=5] ~~~ xp 2 @p
-execute @a ~~~ execute @e[name="Vasérc",r=5] ~~~ xp 2 @p
-execute @a ~~~ execute @e[name="Bijih Besi",r=5] ~~~ xp 2 @p
-execute @a ~~~ execute @e[name="Minerale di ferro",r=5] ~~~ xp 2 @p
-execute @a ~~~ execute @e[name="鉄鉱石",r=5] ~~~ xp 2 @p
-execute @a ~~~ execute @e[name="철광석",r=5] ~~~ xp 2 @p
-execute @a ~~~ execute @e[name="Jernmalm",r=5] ~~~ xp 2 @p
-execute @a ~~~ execute @e[name="IJzererts",r=5] ~~~ xp 2 @p
-execute @a ~~~ execute @e[name="Ruda żelaza",r=5] ~~~ xp 2 @p
-execute @a ~~~ execute @e[name="Minério de Ferro",r=5] ~~~ xp 2 @p
-execute @a ~~~ execute @e[name="Minério de Ferro",r=5] ~~~ xp 2 @p
-execute @a ~~~ execute @e[name="Железная руда",r=5] ~~~ xp 2 @p
-execute @a ~~~ execute @e[name="Železná ruda",r=5] ~~~ xp 2 @p
-execute @a ~~~ execute @e[name="Järnmalm",r=5] ~~~ xp 2 @p
-execute @a ~~~ execute @e[name="Demir Cevheri",r=5] ~~~ xp 2 @p
-execute @a ~~~ execute @e[name="Залізна руда",r=5] ~~~ xp 2 @p
-execute @a ~~~ execute @e[name="鐵礦石",r=5] ~~~ xp 2 @p
-execute @a ~~~ execute @e[name="铁矿石",r=5] ~~~ xp 2 @p
-
-execute @a ~~~ execute @e[name="Желязна руда",r=5] ~~~ kill
-execute @a ~~~ execute @e[name="Železná ruda",r=5] ~~~ kill
-execute @a ~~~ execute @e[name="Jernmalm",r=5] ~~~ kill
-execute @a ~~~ execute @e[name="Eisenerz",r=5] ~~~ kill
-execute @a ~~~ execute @e[name="Ορυκτός σίδηρος",r=5] ~~~ kill
-execute @a ~~~ execute @e[name="Iron Ore",r=5] ~~~ kill
-execute @a ~~~ execute @e[name="Iron Ore",r=5] ~~~ kill
-execute @a ~~~ execute @e[name="Mineral de hierro",r=5] ~~~ kill
-execute @a ~~~ execute @e[name="Mineral de hierro",r=5] ~~~ kill
-execute @a ~~~ execute @e[name="Rautamalmi",r=5] ~~~ kill
-execute @a ~~~ execute @e[name="Minerai de fer",r=5] ~~~ kill
-execute @a ~~~ execute @e[name="Minerai de fer",r=5] ~~~ kill
-execute @a ~~~ execute @e[name="Vasérc",r=5] ~~~ kill
-execute @a ~~~ execute @e[name="Bijih Besi",r=5] ~~~ kill
-execute @a ~~~ execute @e[name="鉄鉱石",r=5] ~~~ kill
-execute @a ~~~ execute @e[name="Minerale di ferro",r=5] ~~~ kill
-execute @a ~~~ execute @e[name="철광석",r=5] ~~~ kill
-execute @a ~~~ execute @e[name="Jernmalm",r=5] ~~~ kill
-execute @a ~~~ execute @e[name="IJzererts",r=5] ~~~ kill
-execute @a ~~~ execute @e[name="Ruda żelaza",r=5] ~~~ kill
-execute @a ~~~ execute @e[name="Minério de Ferro",r=5] ~~~ kill
-execute @a ~~~ execute @e[name="Железная руда",r=5] ~~~ kill
-execute @a ~~~ execute @e[name="Minério de Ferro",r=5] ~~~ kill
-execute @a ~~~ execute @e[name="Železná ruda",r=5] ~~~ kill
-execute @a ~~~ execute @e[name="Demir Cevheri",r=5] ~~~ kill
-execute @a ~~~ execute @e[name="Залізна руда",r=5] ~~~ kill
-execute @a ~~~ execute @e[name="Järnmalm",r=5] ~~~ kill
-execute @a ~~~ execute @e[name="铁矿石",r=5] ~~~ kill
-execute @a ~~~ execute @e[name="鐵礦石",r=5] ~~~ kill
 
 #remove barrrier
 execute @e[type=item,name="Bariéra"] ~~~ kill
