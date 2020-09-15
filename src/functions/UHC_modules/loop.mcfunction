@@ -208,9 +208,9 @@ execute @e[type=item,name="屏障"] ~~~ kill
 
 
 #despawn
-execute @a[tag=host] ~~~ execute @a ~~~ scoreboard players set @e[r=10,type=!player] despawn_timer 0
+execute @a[tag=host] ~~~ execute @a ~~~ scoreboard players set @e[r=20,type=!player] despawn_timer 0
 execute @a[tag=host] ~~~ scoreboard players remove @e[type=!player] despawn_timer 1
-execute @a[tag=host] ~~~ execute @e[scores={despawn_timer=..-200},type=!player] ~~~ tp ~ -5 ~
+execute @a[tag=host] ~~~ execute @e[scores={despawn_timer=..-400},type=!player] ~~~ tp ~ -5 ~
 
 #remove mobs in pregame
 execute @s[tag=host,scores={settings_state=1}] ~~~ tp @e[type=!player] 42069 420 42069
