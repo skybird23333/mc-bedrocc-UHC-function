@@ -1,7 +1,6 @@
 #scoreboard setup
 scoreboard objectives add display dummy "§lUHC"
 scoreboard objectives add timer dummy
-scoreboard objectives add counter dummy
 scoreboard objectives add spec_timeout dummy
 scoreboard objectives add var_alive dummy
 scoreboard objectives add debug_tickspeed dummy
