@@ -1,6 +1,6 @@
 tellraw @a[tag=eventLister,tag=host] {"rawtext":[{"text":"loop is run"}]}
 execute @s[tag=host,scores={settings_state=1}] ~~~ effect @a weakness 1 0 true
-execute @a[tag=host] ~~~ scoreboard players add @s anim_timer 1
+execute @s[tag=host] ~~~ scoreboard players add @s anim_timer 1
 execute @s[tag=host,scores={settings_state=1,anim_timer=1}] ~~~ title @a actionbar §4W§faiting to start...
 execute @s[tag=host,scores={settings_state=1,anim_timer=2}] ~~~ title @a actionbar W§4a§fiting to start...
 execute @s[tag=host,scores={settings_state=1,anim_timer=3}] ~~~ title @a actionbar Wa§4i§fting to start...
@@ -208,19 +208,19 @@ execute @e[type=item,name="屏障"] ~~~ kill
 
 
 #despawn
-execute @a[tag=host] ~~~ execute @a ~~~ scoreboard players set @e[r=20,type=!player] despawn_timer 0
-execute @a[tag=host] ~~~ scoreboard players remove @e[type=!player] despawn_timer 1
-execute @a[tag=host] ~~~ execute @e[scores={despawn_timer=..-400},type=!player] ~~~ tp ~ -5 ~
+execute @s[tag=host] ~~~ execute @a ~~~ scoreboard players set @e[r=40,type=!player] despawn_timer 0
+execute @s[tag=host] ~~~ scoreboard players remove @e[type=!player] despawn_timer 1
+execute @s[tag=host] ~~~ execute @e[scores={despawn_timer=..-800},type=!player] ~~~ tp ~ -5 ~
 
 #remove mobs in pregame
 execute @s[tag=host,scores={settings_state=1}] ~~~ tp @e[type=!player] 42069 420 42069
 
 #beta info
-execute @a[tag=host] ~~~ scoreboard players operation timer debugger = @s timer
-execute @a[tag=host] ~~~ scoreboard players operation var_alive debugger = @s var_alive
-execute @a[tag=host] ~~~ scoreboard players operation settings_state debugger = @s settings_state
-execute @a[tag=host] ~~~ scoreboard players operation spec_timeout debugger = @s spec_timeout
-execute @a[tag=host] ~~~ scoreboard players operation anim_timer debugger = @s anim_timer
+execute @s[tag=host] ~~~ scoreboard players operation timer debugger = @s timer
+execute @s[tag=host] ~~~ scoreboard players operation var_alive debugger = @s var_alive
+execute @s[tag=host] ~~~ scoreboard players operation settings_state debugger = @s settings_state
+execute @s[tag=host] ~~~ scoreboard players operation spec_timeout debugger = @s spec_timeout
+execute @s[tag=host] ~~~ scoreboard players operation anim_timer debugger = @s anim_timer
 
 #a
 #scoreboard objectives setdisplay list debugger
