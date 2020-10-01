@@ -179,9 +179,7 @@ execute @a ~~~ fill ~7 150 ~7 ~-7 90 ~-7 iron_ore 0 replace stone 5
 execute @e[type=item,name="Bariéra"] ~~~ kill
 execute @e[type=item,name="Бариера"] ~~~ kill
 execute @e[type=item,name="Barriere"] ~~~ kill
-execute @e[type=item,name="Barriere"] ~~~ kill
 execute @e[type=item,name="Εμπόδιο"] ~~~ kill
-execute @e[type=item,name="Barrier"] ~~~ kill
 execute @e[type=item,name="Barrier"] ~~~ kill
 execute @e[type=item,name="Barrera"] ~~~ kill
 execute @e[type=item,name="Este"] ~~~ kill
@@ -197,13 +195,11 @@ execute @e[type=item,name="Barriere"] ~~~ kill
 execute @e[type=item,name="Barrière"] ~~~ kill
 execute @e[type=item,name="Bariera"] ~~~ kill
 execute @e[type=item,name="Barreira"] ~~~ kill
-execute @e[type=item,name="Barreira"] ~~~ kill
 execute @e[type=item,name="Барьер"] ~~~ kill
 execute @e[type=item,name="Barriär"] ~~~ kill
 execute @e[type=item,name="Bariéra"] ~~~ kill
 execute @e[type=item,name="Bariyer"] ~~~ kill
 execute @e[type=item,name="Бар’єр"] ~~~ kill
-execute @e[type=item,name="屏障"] ~~~ kill
 execute @e[type=item,name="屏障"] ~~~ kill
 
 
