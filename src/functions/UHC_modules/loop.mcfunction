@@ -166,12 +166,10 @@ execute @s[tag=host,scores={timer=1..,settings_state=2,spec_timeout=..0}] ~~~ sc
 enchant @s efficiency 2
 
 #removing ores/stones
-execute @a ~~~ fill ~7 90 ~7 ~-7 0 ~-7 diamond_ore 0 replace redstone_ore
-execute @a ~~~ fill ~7 90 ~7 ~-7 0 ~-7 diamond_ore 0 replace emerald_ore
-execute @a ~~~ fill ~7 90 ~7 ~-7 0 ~-7 diamond_ore 0 replace stone 1
+execute @a ~~~ fill ~7 30 ~7 ~-7 0 ~-7 diamond_ore 0 replace emerald_ore
+execute @a ~~~ fill ~7 30 ~7 ~-7 0 ~-7 diamond_ore 0 replace stone 1
 execute @a ~~~ fill ~7 90 ~7 ~-7 0 ~-7 coal_ore 0 replace stone 3
 execute @a ~~~ fill ~7 90 ~7 ~-7 0 ~-7 iron_ore 0 replace stone 5
-execute @a ~~~ fill ~7 150 ~7 ~-7 90 ~-7 diamond_ore 0 replace stone 1
 execute @a ~~~ fill ~7 150 ~7 ~-7 90 ~-7 coal_ore 0 replace stone 3
 execute @a ~~~ fill ~7 150 ~7 ~-7 90 ~-7 iron_ore 0 replace stone 5
 
