@@ -85,6 +85,7 @@ execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ playsound block.b
 execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ title @a subtitle §e@a[tag=!dead] won the game!
 execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ title @a[tag=!dead] subtitle Winner winner chicken dinner!
 execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ title @a title §eMatch ended
+execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ tag @a remove dead
 execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ effect @a slow_falling 90 0 true
 execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ scoreboard objectives setdisplay sidebar
 execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ playsound record.chirp @a
