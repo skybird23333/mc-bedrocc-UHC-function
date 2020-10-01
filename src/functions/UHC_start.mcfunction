@@ -1,8 +1,8 @@
 execute @s[tag=host,scores={var_alive=2..}] ~~~ scoreboard players set @a[tag=host,scores={settings_state=1}] "settings_state" 2
 execute @s[tag=host,scores={var_alive=2..}] ~~~ function UHC_modules/spreadplayers
-execute @s[tag=host,scores={var_alive=2..}] ~~~ title @a title §cGame Started
+execute @s[tag=host,scores={var_alive=2..}] ~~~ title @a actionbar Teleporting everyone...
+execute @s[tag=host,scores={var_alive=2..}] ~~~ tellraw @a {"rawtext":[{"text":"§lGame started§r Fight for your victory!"}]}
 execute @s[tag=host,scores={var_alive=2..}] ~~~ effect @a[tag=!spec] slow_falling 90 1 true
-execute @s[tag=host,scores={var_alive=2..}] ~~~ effect @a[tag=!spec] blindness 5 1 true
 execute @s[tag=host,scores={var_alive=2..}] ~~~ execute @a[tag=!spec] ~~~ tp ~ 200 ~
 execute @s[tag=host,scores={var_alive=2..}] ~~~ replaceitem entity @a[tag=!spec] slot.armor.head 0 leather_helmet 1
 execute @s[tag=host,scores={var_alive=2..}] ~~~ replaceitem entity @a[tag=!spec] slot.armor.chest 0 leather_chestplate 1
