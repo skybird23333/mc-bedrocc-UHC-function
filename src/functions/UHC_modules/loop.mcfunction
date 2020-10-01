@@ -39,8 +39,10 @@ execute @s[tag=host,scores={settings_state=1,autostart=1..,start_timer=1}] ~~~ t
 execute @s[tag=host,scores={settings_state=1,autostart=1..,start_timer=0}] ~~~ function UHC_start
 #alive player counter 
 scoreboard players set @a[tag=host] var_alive 0
+#in game
 execute @s[tag=host,scores={settings_state=2}] ~~~ execute @a[tag=!dead] ~~~ scoreboard players add @a[tag=host] var_alive 1
-execute @s[tag=host,scores={settings_state=1}] ~~~ execute @a ~~~ scoreboard players operation @a[tag=host] var_alive += @s counter
+execute @s[tag=host,scores={settings_state=1}] ~~~ execute @a ~~~ scoreboard players operation @a[tag=host] var_alive += 1
+#display
 execute @s[tag=host,scores={settings_state=1}] ~~~ scoreboard players operation  "§aJoined: " display = @a[tag=host] var_alive
 execute @s[tag=host,scores={settings_state=2}] ~~~ scoreboard players operation  "§aPlayers Alive: " display = @a[tag=host] var_alive
 execute @s[tag=host,scores={settings_state=2}] ~~~ scoreboard players reset "§aJoined: " display
