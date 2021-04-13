@@ -110,25 +110,125 @@ execute @s[tag=host,scores={settings_state=2,timer=9000}] ~~~ tellraw @a {"rawte
 execute @s[tag=host,scores={settings_state=2,timer=6000}] ~~~ tellraw @a {"rawtext":[{"text":"§eDeathmatch in 10 minutes!"}]}
 execute @s[tag=host,scores={settings_state=2,timer=3000}] ~~~ tellraw @a {"rawtext":[{"text":"§eDeathmatch in 5 minutes!"}]}
 execute @s[tag=host,scores={settings_state=2,timer=600}] ~~~ tellraw @a {"rawtext":[{"text":"§eDeathmatch in 1 minute!"}]}
-execute @s[tag=host,scores={settings_state=2,timer=100}] ~~~ title @a subtitle §eDeathmatch in §l10
+execute @s[tag=host,scores={settings_state=2,timer=600}] ~~~ title @a subtitle Deathmatch in §l60
+execute @s[tag=host,scores={settings_state=2,timer=600}] ~~~ title @a title §f
+execute @s[tag=host,scores={settings_state=2,timer=590}] ~~~ title @a subtitle Deathmatch in §l59
+execute @s[tag=host,scores={settings_state=2,timer=590}] ~~~ title @a title §f
+execute @s[tag=host,scores={settings_state=2,timer=580}] ~~~ title @a subtitle Deathmatch in §l58
+execute @s[tag=host,scores={settings_state=2,timer=580}] ~~~ title @a title §f
+execute @s[tag=host,scores={settings_state=2,timer=570}] ~~~ title @a subtitle Deathmatch in §l57
+execute @s[tag=host,scores={settings_state=2,timer=570}] ~~~ title @a title §f
+execute @s[tag=host,scores={settings_state=2,timer=560}] ~~~ title @a subtitle Deathmatch in §l56
+execute @s[tag=host,scores={settings_state=2,timer=560}] ~~~ title @a title §f
+execute @s[tag=host,scores={settings_state=2,timer=550}] ~~~ title @a subtitle Deathmatch in §l55
+execute @s[tag=host,scores={settings_state=2,timer=550}] ~~~ title @a title §f
+execute @s[tag=host,scores={settings_state=2,timer=540}] ~~~ title @a subtitle Deathmatch in §l54
+execute @s[tag=host,scores={settings_state=2,timer=540}] ~~~ title @a title §f
+execute @s[tag=host,scores={settings_state=2,timer=530}] ~~~ title @a subtitle Deathmatch in §l53
+execute @s[tag=host,scores={settings_state=2,timer=530}] ~~~ title @a title §f
+execute @s[tag=host,scores={settings_state=2,timer=520}] ~~~ title @a subtitle Deathmatch in §l52
+execute @s[tag=host,scores={settings_state=2,timer=520}] ~~~ title @a title §f
+execute @s[tag=host,scores={settings_state=2,timer=510}] ~~~ title @a subtitle Deathmatch in §l51
+execute @s[tag=host,scores={settings_state=2,timer=510}] ~~~ title @a title §f
+execute @s[tag=host,scores={settings_state=2,timer=500}] ~~~ title @a subtitle Deathmatch in §l50
+execute @s[tag=host,scores={settings_state=2,timer=500}] ~~~ title @a title §f
+execute @s[tag=host,scores={settings_state=2,timer=490}] ~~~ title @a subtitle Deathmatch in §l49
+execute @s[tag=host,scores={settings_state=2,timer=490}] ~~~ title @a title §f
+execute @s[tag=host,scores={settings_state=2,timer=480}] ~~~ title @a subtitle Deathmatch in §l48
+execute @s[tag=host,scores={settings_state=2,timer=480}] ~~~ title @a title §f
+execute @s[tag=host,scores={settings_state=2,timer=470}] ~~~ title @a subtitle Deathmatch in §l47
+execute @s[tag=host,scores={settings_state=2,timer=470}] ~~~ title @a title §f
+execute @s[tag=host,scores={settings_state=2,timer=460}] ~~~ title @a subtitle Deathmatch in §l46
+execute @s[tag=host,scores={settings_state=2,timer=460}] ~~~ title @a title §f
+execute @s[tag=host,scores={settings_state=2,timer=450}] ~~~ title @a subtitle Deathmatch in §l45
+execute @s[tag=host,scores={settings_state=2,timer=450}] ~~~ title @a title §f
+execute @s[tag=host,scores={settings_state=2,timer=440}] ~~~ title @a subtitle Deathmatch in §l44
+execute @s[tag=host,scores={settings_state=2,timer=440}] ~~~ title @a title §f
+execute @s[tag=host,scores={settings_state=2,timer=430}] ~~~ title @a subtitle Deathmatch in §l43
+execute @s[tag=host,scores={settings_state=2,timer=430}] ~~~ title @a title §f
+execute @s[tag=host,scores={settings_state=2,timer=420}] ~~~ title @a subtitle Deathmatch in §l42
+execute @s[tag=host,scores={settings_state=2,timer=420}] ~~~ title @a title §f
+execute @s[tag=host,scores={settings_state=2,timer=410}] ~~~ title @a subtitle Deathmatch in §l41
+execute @s[tag=host,scores={settings_state=2,timer=410}] ~~~ title @a title §f
+execute @s[tag=host,scores={settings_state=2,timer=400}] ~~~ title @a subtitle Deathmatch in §l40
+execute @s[tag=host,scores={settings_state=2,timer=400}] ~~~ title @a title §f
+execute @s[tag=host,scores={settings_state=2,timer=390}] ~~~ title @a subtitle Deathmatch in §l39
+execute @s[tag=host,scores={settings_state=2,timer=390}] ~~~ title @a title §f
+execute @s[tag=host,scores={settings_state=2,timer=380}] ~~~ title @a subtitle Deathmatch in §l38
+execute @s[tag=host,scores={settings_state=2,timer=380}] ~~~ title @a title §f
+execute @s[tag=host,scores={settings_state=2,timer=370}] ~~~ title @a subtitle Deathmatch in §l37
+execute @s[tag=host,scores={settings_state=2,timer=370}] ~~~ title @a title §f
+execute @s[tag=host,scores={settings_state=2,timer=360}] ~~~ title @a subtitle Deathmatch in §l36
+execute @s[tag=host,scores={settings_state=2,timer=360}] ~~~ title @a title §f
+execute @s[tag=host,scores={settings_state=2,timer=350}] ~~~ title @a subtitle Deathmatch in §l35
+execute @s[tag=host,scores={settings_state=2,timer=350}] ~~~ title @a title §f
+execute @s[tag=host,scores={settings_state=2,timer=340}] ~~~ title @a subtitle Deathmatch in §l34
+execute @s[tag=host,scores={settings_state=2,timer=340}] ~~~ title @a title §f
+execute @s[tag=host,scores={settings_state=2,timer=330}] ~~~ title @a subtitle Deathmatch in §l33
+execute @s[tag=host,scores={settings_state=2,timer=330}] ~~~ title @a title §f
+execute @s[tag=host,scores={settings_state=2,timer=320}] ~~~ title @a subtitle Deathmatch in §l32
+execute @s[tag=host,scores={settings_state=2,timer=320}] ~~~ title @a title §f
+execute @s[tag=host,scores={settings_state=2,timer=310}] ~~~ title @a subtitle Deathmatch in §l31
+execute @s[tag=host,scores={settings_state=2,timer=310}] ~~~ title @a title §f
+execute @s[tag=host,scores={settings_state=2,timer=300}] ~~~ title @a subtitle Deathmatch in §l30
+execute @s[tag=host,scores={settings_state=2,timer=300}] ~~~ title @a title §f
+execute @s[tag=host,scores={settings_state=2,timer=290}] ~~~ title @a subtitle Deathmatch in §l29
+execute @s[tag=host,scores={settings_state=2,timer=290}] ~~~ title @a title §f
+execute @s[tag=host,scores={settings_state=2,timer=280}] ~~~ title @a subtitle Deathmatch in §l28
+execute @s[tag=host,scores={settings_state=2,timer=280}] ~~~ title @a title §f
+execute @s[tag=host,scores={settings_state=2,timer=270}] ~~~ title @a subtitle Deathmatch in §l27
+execute @s[tag=host,scores={settings_state=2,timer=270}] ~~~ title @a title §f
+execute @s[tag=host,scores={settings_state=2,timer=260}] ~~~ title @a subtitle Deathmatch in §l26
+execute @s[tag=host,scores={settings_state=2,timer=260}] ~~~ title @a title §f
+execute @s[tag=host,scores={settings_state=2,timer=250}] ~~~ title @a subtitle Deathmatch in §l25
+execute @s[tag=host,scores={settings_state=2,timer=250}] ~~~ title @a title §f
+execute @s[tag=host,scores={settings_state=2,timer=240}] ~~~ title @a subtitle Deathmatch in §l24
+execute @s[tag=host,scores={settings_state=2,timer=240}] ~~~ title @a title §f
+execute @s[tag=host,scores={settings_state=2,timer=230}] ~~~ title @a subtitle Deathmatch in §l23
+execute @s[tag=host,scores={settings_state=2,timer=230}] ~~~ title @a title §f
+execute @s[tag=host,scores={settings_state=2,timer=220}] ~~~ title @a subtitle Deathmatch in §l22
+execute @s[tag=host,scores={settings_state=2,timer=220}] ~~~ title @a title §f
+execute @s[tag=host,scores={settings_state=2,timer=210}] ~~~ title @a subtitle Deathmatch in §l21
+execute @s[tag=host,scores={settings_state=2,timer=210}] ~~~ title @a title §f
+execute @s[tag=host,scores={settings_state=2,timer=200}] ~~~ title @a subtitle Deathmatch in §l20
+execute @s[tag=host,scores={settings_state=2,timer=200}] ~~~ title @a title §f
+execute @s[tag=host,scores={settings_state=2,timer=190}] ~~~ title @a subtitle Deathmatch in §l19
+execute @s[tag=host,scores={settings_state=2,timer=190}] ~~~ title @a title §f
+execute @s[tag=host,scores={settings_state=2,timer=180}] ~~~ title @a subtitle Deathmatch in §l18
+execute @s[tag=host,scores={settings_state=2,timer=180}] ~~~ title @a title §f
+execute @s[tag=host,scores={settings_state=2,timer=170}] ~~~ title @a subtitle Deathmatch in §l17
+execute @s[tag=host,scores={settings_state=2,timer=170}] ~~~ title @a title §f
+execute @s[tag=host,scores={settings_state=2,timer=160}] ~~~ title @a subtitle Deathmatch in §l16
+execute @s[tag=host,scores={settings_state=2,timer=160}] ~~~ title @a title §f
+execute @s[tag=host,scores={settings_state=2,timer=150}] ~~~ title @a subtitle Deathmatch in §l15
+execute @s[tag=host,scores={settings_state=2,timer=150}] ~~~ title @a title §f
+execute @s[tag=host,scores={settings_state=2,timer=140}] ~~~ title @a subtitle Deathmatch in §l14
+execute @s[tag=host,scores={settings_state=2,timer=140}] ~~~ title @a title §f
+execute @s[tag=host,scores={settings_state=2,timer=130}] ~~~ title @a subtitle Deathmatch in §l13
+execute @s[tag=host,scores={settings_state=2,timer=130}] ~~~ title @a title §f
+execute @s[tag=host,scores={settings_state=2,timer=120}] ~~~ title @a subtitle Deathmatch in §l12
+execute @s[tag=host,scores={settings_state=2,timer=120}] ~~~ title @a title §f
+execute @s[tag=host,scores={settings_state=2,timer=110}] ~~~ title @a subtitle Deathmatch in §l11
+execute @s[tag=host,scores={settings_state=2,timer=110}] ~~~ title @a title §f
+execute @s[tag=host,scores={settings_state=2,timer=100}] ~~~ title @a subtitle Deathmatch in §4§l10
 execute @s[tag=host,scores={settings_state=2,timer=100}] ~~~ title @a title §f
-execute @s[tag=host,scores={settings_state=2,timer=90}] ~~~ title @a subtitle §eDeathmatch in §l9
+execute @s[tag=host,scores={settings_state=2,timer=90}] ~~~ title @a subtitle Deathmatch in §4§l9
 execute @s[tag=host,scores={settings_state=2,timer=90}] ~~~ title @a title §f
-execute @s[tag=host,scores={settings_state=2,timer=80}] ~~~ title @a subtitle §eDeathmatch in §l8
+execute @s[tag=host,scores={settings_state=2,timer=80}] ~~~ title @a subtitle Deathmatch in §4§l8
 execute @s[tag=host,scores={settings_state=2,timer=80}] ~~~ title @a title §f
-execute @s[tag=host,scores={settings_state=2,timer=70}] ~~~ title @a subtitle §eDeathmatch in §l7
+execute @s[tag=host,scores={settings_state=2,timer=70}] ~~~ title @a subtitle Deathmatch in §4§l7
 execute @s[tag=host,scores={settings_state=2,timer=70}] ~~~ title @a title §f
-execute @s[tag=host,scores={settings_state=2,timer=60}] ~~~ title @a subtitle §eDeathmatch in §l6
+execute @s[tag=host,scores={settings_state=2,timer=60}] ~~~ title @a subtitle Deathmatch in §4§l6
 execute @s[tag=host,scores={settings_state=2,timer=60}] ~~~ title @a title §f
-execute @s[tag=host,scores={settings_state=2,timer=50}] ~~~ title @a subtitle §eDeathmatch in §l5
+execute @s[tag=host,scores={settings_state=2,timer=50}] ~~~ title @a subtitle Deathmatch in §4§l5
 execute @s[tag=host,scores={settings_state=2,timer=50}] ~~~ title @a title §f
-execute @s[tag=host,scores={settings_state=2,timer=40}] ~~~ title @a subtitle §eDeathmatch in §l4
+execute @s[tag=host,scores={settings_state=2,timer=40}] ~~~ title @a subtitle Deathmatch in §4§l4
 execute @s[tag=host,scores={settings_state=2,timer=40}] ~~~ title @a title §f
-execute @s[tag=host,scores={settings_state=2,timer=30}] ~~~ title @a subtitle §eDeathmatch in §l3
+execute @s[tag=host,scores={settings_state=2,timer=30}] ~~~ title @a subtitle Deathmatch in §4§l3
 execute @s[tag=host,scores={settings_state=2,timer=30}] ~~~ title @a title §f
-execute @s[tag=host,scores={settings_state=2,timer=20}] ~~~ title @a subtitle §eDeathmatch in §l2
+execute @s[tag=host,scores={settings_state=2,timer=20}] ~~~ title @a subtitle Deathmatch in §4§l2
 execute @s[tag=host,scores={settings_state=2,timer=20}] ~~~ title @a title §f
-execute @s[tag=host,scores={settings_state=2,timer=10}] ~~~ title @a subtitle §eDeathmatch in §l1
+execute @s[tag=host,scores={settings_state=2,timer=10}] ~~~ title @a subtitle Deathmatch in §4§l1
 execute @s[tag=host,scores={settings_state=2,timer=10}] ~~~ title @a title §f
 execute @s[tag=host,scores={settings_state=2,timer=0}] ~~~ gamemode 2 @a
 execute @s[tag=host,scores={settings_state=2,timer=0}] ~~~ fill 9 100 9 -9 100 -9 stone
