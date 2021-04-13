@@ -93,7 +93,6 @@ execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ playsound record.
 execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ scoreboard players set @s settings_state 0
 execute @s[tag=host,scores={settings_state=0}] ~~~ particle minecraft:totem_particle 0 203 0
 #rules
-kill @e[type=xp_orb]
 execute @s[tag=host,scores={settings_state=2,timer=0..}] ~~~ scoreboard players remove @s timer 1
 execute @s[tag=host,scores={settings_state=0}] ~~~ effect @a instant_health 1 255 true
 execute @s[tag=host,scores={settings_state=1}] ~~~ effect @a instant_health 1 255 true
