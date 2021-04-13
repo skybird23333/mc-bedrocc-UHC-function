@@ -48,3 +48,4 @@ time set noon
 tellraw @s {"rawtext":[{"text":"§aSetup complete."}]}
 tellraw @s {"rawtext":[{"text":"§aYou can now allow players to join and use §e/function UHC_start§a to start the game."}]}
 tellraw @s {"rawtext":[{"text":"§ePlease make sure that you do NOT leave until the game ends, or the game will corrupt."}]}
+tellraw @s {"rawtext":[{"text":"§eTip: Use /function UHC_help/settings to see a list of available configs!"}]}
