@@ -16,21 +16,29 @@ scoreboard objectives add settings_healing dummy
 scoreboard objectives add settings_time dummy
 scoreboard objectives add settings_gapple dummy
 scoreboard objectives add settings_spec dummy
-scoreboard objectives add settings_autosmelt dummy
+scoreboard objectives add settings_autosmt dummy
+scoreboard objectives add settings_enchant dummy
 # v THIS IS EXPERIMENTAL DO NOT TOUCH v
 scoreboard objectives add autostart dummy
 # ^ THIS IS EXPERIMENTAL DO NOT TOUCH ^
 #default settings
 scoreboard players set @s settings_healing 1
-scoreboard players set @s settings_time 0
+scoreboard players set @s settings_time 1
 scoreboard players set @s settings_gapple 1
 scoreboard players set @s settings_spec 1
-scoreboard players set @s settings_autosmelt 1
+scoreboard players set @s settings_autosmt 1
+scoreboard players set @s settings_enchant 0
 scoreboard players set @s autostart 0
 gamerule domobspawning false
 #tp to 0,0
 scoreboard objectives setdisplay sidebar display
 spreadplayers 0 0 1 2 @s
+tp @a @s
+
+fill ~-8 ~8 ~-8 ~8 ~-8 ~8 minecraft:glass 0 replace minecraft:air
+fill ~-8 ~8 ~-8 ~8 ~-8 ~8 minecraft:glass 0 replace minecraft:water
+fill ~-5 ~5 ~-5 ~5 ~-5 ~5 minecraft:air 0 replace minecraft:glass
+
 spawnpoint @a 0 100 0
 setworldspawn 0 100 0
 effect @s slow_falling 90 1 true

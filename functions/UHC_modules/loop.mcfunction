@@ -20,14 +20,9 @@ execute @s[tag=host,scores={settings_state=1,anim_timer=16}] ~~~ title @a[tag=!h
 execute @s[tag=host,scores={settings_state=1,anim_timer=17}] ~~~ title @a[tag=!host] actionbar Waiting to start..§4.§f
 execute @s[tag=host,scores={settings_state=1,anim_timer=18}] ~~~ title @a[tag=!host] actionbar Waiting to start...
 execute @s[tag=host,scores={settings_state=1,anim_timer=19..40}] ~~~ title @a[tag=!host] actionbar Waiting to start...
-execute @s[tag=host,scores={settings_state=1,var_alive=1}] ~~~ title @a[tag=host] actionbar §eWaiting for players...
+#execute @s[tag=host,scores={settings_state=1,var_alive=1}] ~~~ title @a[tag=host] actionbar §eWaiting for players...
 execute @s[tag=host,scores={settings_state=1,var_alive=2..}] ~~~ title @a[tag=host] actionbar §eType /function UHC_start to start.
 execute @s[tag=host,scores={anim_timer=40..}] ~~~ scoreboard players set @s anim_timer 0
-#autostart
-#autostart usuage:
-#SCOREBOARD players set start_timer to time u want in secs
-#SCOREBOARD players set autostart 1
-#its stupid so it will no longer work
 execute @s[tag=host,scores={settings_state=1,autostart=1..}] ~~~ scoreboard players operation @s start_timer = @s autostart
 execute @s[tag=host,scores={settings_state=1,autostart=1..,anim_timer=5}] ~~~ scoreboard players remove @s start_timer 1
 execute @s[tag=host,scores={settings_state=1,autostart=1..,anim_timer=15}] ~~~ scoreboard players remove @s start_timer 1
@@ -69,30 +64,16 @@ execute @s[tag=host,scores={settings_state=2}] ~~~ execute @a[scores={deathCount
 execute @s[tag=host,scores={settings_state=2}] ~~~ execute @a[scores={deathCount=1},tag=!dead] ~~~ playsound block.bell.hit @s ~~~ 1 3
 execute @s[tag=host,scores={settings_state=2}] ~~~ tag @a[scores={deathCount=1},tag=!dead] add dead
 
-#on chicken dinner/victory royale for forknife players
-execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ fill 5 200 5 -5 202 -5 air
-execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ fill 5 200 5 -5 200 -5 quartz_block
-execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ fill 1 200 1 -1 200 -1 diamond_block
-execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ fill 3 201 3 -3 201 -3 iron_block
-execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ fill 2 201 2 -2 201 -2 gold_block
-execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ setblock 0 201 0 beacon
-execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ setblock 1 202 0 diamond_block
-execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ setblock -1 202 0 diamond_block
-execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ setblock 0 202 1 diamond_block
-execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ setblock 0 202 -1 diamond_block
-execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ setblock 0 202 0 glass
-execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ tp @a[tag=dead] -3 201 -3
-execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ tp @a[tag=!dead] 0 204 0
+#on win
+execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ spreadplayers 0 0 0 5 @a
 execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ playsound block.bell.hit @s ~~~ 1 10
-execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ title @a subtitle §e@a[tag=!dead] won the game!
-execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ title @a[tag=!dead] subtitle Winner winner chicken dinner!
+execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ title @a subtitle §a@a[tag=!dead] won the game!
 execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ title @a title §eMatch ended
 execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ tag @a remove dead
 execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ effect @a slow_falling 90 0 true
 execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ scoreboard objectives setdisplay sidebar
 execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ playsound record.chirp @a
 execute @s[tag=host,scores={settings_state=2,var_alive=1}] ~~~ scoreboard players set @s settings_state 0
-execute @s[tag=host,scores={settings_state=0}] ~~~ particle minecraft:totem_particle 0 203 0
 #rules
 execute @s[tag=host,scores={settings_state=2,timer=0..}] ~~~ scoreboard players remove @s timer 1
 execute @s[tag=host,scores={settings_state=0}] ~~~ effect @a instant_health 1 255 true
@@ -241,14 +222,13 @@ execute @s[tag=host,scores={settings_state=2,timer=0}] ~~~ tp @a[tag=!dead] 0 10
 fill ~10 ~10 ~10 ~-10 ~-10 ~-10 air 0 replace end_portal
 fill ~10 ~10 ~10 ~-10 ~-10 ~-10 air 0 replace portal
 #settings
-execute @s[tag=host,scores={settings_autosmelt=1}] ~~~ function UHC_modules/autosmelt
+execute @s[tag=host,scores={settings_enchant=1}] ~~~ function UHC_modules/enchant
+execute @s[tag=host,scores={settings_autosmt=1}] ~~~ function UHC_modules/autosmelt
 execute @s[tag=host,scores={settings_gapple=1}] ~~~ function UHC_modules/gapple
 execute @s[tag=host,scores={settings_spec=1}] ~~~ function UHC_modules/spectate
 execute @s[tag=host,scores={settings_spec=0}] ~~~ tp @a[tag=dead] 0 300 0
 execute @s[tag=host,scores={settings_spec=0}] ~~~ title @a[tag=dead] actionbar Spectating is disabled.
 
-#HAHA this is still enabled
-#things for dead people(no offense)
 gamemode 2 @a[tag=dead]
 execute @a[tag=dead] ~~~ function UHC_modules/barrierInv
 effect @a[tag=dead] invisibility 1 255 true
@@ -262,20 +242,6 @@ execute @s[tag=host,scores={timer=1..,settings_state=2,spec_timeout=1..299}] ~~~
 execute @s[tag=host,scores={timer=1..,settings_state=2,spec_timeout=1..299}] ~~~ execute @a[tag=spec,rxm=75,rx=90] ~~~ tp @a[tag=dead] ^-0.5 ^ ^-1 facing ^-0.5 ^ ^1
 execute @s[tag=host,scores={timer=1..,settings_state=2,spec_timeout=1..299}] ~~~ execute @a[tag=spec] ~~~ title @a[tag=dead] actionbar §lSpectating §e@s
 execute @s[tag=host,scores={timer=1..,settings_state=2,spec_timeout=..0}] ~~~ scoreboard players set @s spec_timeout 300
-
-#enchating stuff
-#pickaxe/axe/stuff
-enchant @s efficiency 2
-
-#removing ores/stones
-execute @a ~~~ fill ~7 30 ~7 ~-7 0 ~-7 diamond_ore 0 replace emerald_ore
-execute @a ~~~ fill ~7 30 ~7 ~-7 0 ~-7 diamond_ore 0 replace stone 1
-execute @a ~~~ fill ~7 90 ~7 ~-7 0 ~-7 coal_ore 0 replace stone 3
-execute @a ~~~ fill ~7 90 ~7 ~-7 0 ~-7 iron_ore 0 replace stone 5
-execute @a ~~~ fill ~7 150 ~7 ~-7 90 ~-7 coal_ore 0 replace stone 3
-execute @a ~~~ fill ~7 150 ~7 ~-7 90 ~-7 iron_ore 0 replace stone 5
-
-
 
 #remove barrrier
 execute @e[type=item,name="Bariéra"] ~~~ kill
@@ -306,19 +272,16 @@ execute @e[type=item,name="屏障"] ~~~ kill
 
 
 #despawn
-execute @s[tag=host] ~~~ execute @a ~~~ scoreboard players set @e[r=80,type=!player] despawn_timer 0
+execute @s[tag=host] ~~~ execute @a ~~~ scoreboard players set @e[r=50,type=!player] despawn_timer 0
 execute @s[tag=host] ~~~ scoreboard players remove @e[type=!player] despawn_timer 1
 execute @s[tag=host] ~~~ execute @e[scores={despawn_timer=..-400},type=!player] ~~~ tp ~ -5 ~
 
 #remove mobs in pregame
 execute @s[tag=host,scores={settings_state=1}] ~~~ tp @e[type=!player] 42069 420 42069
 
-#beta info
+#debug
 execute @s[tag=host] ~~~ scoreboard players operation timer debugger = @s timer
 execute @s[tag=host] ~~~ scoreboard players operation var_alive debugger = @s var_alive
 execute @s[tag=host] ~~~ scoreboard players operation settings_state debugger = @s settings_state
 execute @s[tag=host] ~~~ scoreboard players operation spec_timeout debugger = @s spec_timeout
 execute @s[tag=host] ~~~ scoreboard players operation anim_timer debugger = @s anim_timer
-
-#a
-#scoreboard objectives setdisplay list debugger
