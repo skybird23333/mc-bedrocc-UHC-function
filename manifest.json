@@ -2,9 +2,9 @@
     "format_version": 2,
     "header": {
         "description": "§lPlay UHC in your world!\nhttps://mcpedl.com/uhc-function-addon",
-        "name": "UHC Function Pack 5.0",
+        "name": "UHC Function Pack 5.1",
         "uuid": "ce649bcf-216c-4013-9068-6a802b89d725",
-        "version": [ 5, 0, 0 ],
+        "version": [ 5, 1, 0 ],
         "min_engine_version": [ 1, 13, 0 ]
     },
     "modules": [
